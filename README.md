@@ -4,7 +4,7 @@
 </head>
 <h3 align="center"> Ein Projekt von David Borgmann und Simon Rettmann</h3>
 
-<b3 Navigation<b/3>
+<b3Navigation<b/3>
   
 <a href="#Entstehung"> Entstehung der Idee</a>
   
