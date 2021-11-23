@@ -4,6 +4,8 @@
 </head>
 <h3 align="center"> Ein Projekt von David Borgmann und Simon Rettmann</h3>
 
+<h4>Navigation</h2>
+  
 <div class="gallery">
   <figure>
     <img src="https://user-images.githubusercontent.com/88385654/143037268-3350bee4-ea04-49e1-9e9e-01c0cc5e8074.png">
