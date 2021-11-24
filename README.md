@@ -7,5 +7,8 @@
 
 <b>Navigation</b>
 <ul>
-  <li> <a href="#Entstehung"> Entstehung der Idee</a> </li> <li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte</a> </li> <li> <a href="#Software"> Umsetzung der Software</a> </li> <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
+  <li> <a href="#Entstehung"> Entstehung der Idee</a> </li>
+  <li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte</a> </li>
+  <li> <a href="#Software"> Umsetzung der Software</a> </li> 
+  <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
 </ul>
