@@ -9,9 +9,9 @@
 <ul>
   <li> <a href="#Entstehung"> Entstehung der Idee</a> </li>
   
-<a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte</a>
+  <li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte</a> </li>
 
-<a href="#Software"> Umsetzung der Software</a>
+  <li> <a href="#Software"> Umsetzung der Software</a> </li>
  
-<a href="#Hardware"> Umsetzung der Hardware</a>
+  <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
 </ul>
