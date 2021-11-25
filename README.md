@@ -17,7 +17,7 @@
 
 
 
-<img src="https://user-images.githubusercontent.com/15522554/54867096-7169d700-4d8d-11e9-8f9a-bee162a01427.png">
+
 <a href="https://github.com/Ramotion/cardslider-android">
 <img align="left" src="https://user-images.githubusercontent.com/15522554/85434507-d3b41780-b58e-11ea-9386-42741f0921ae.gif"/></a>
 <p><h1 align="left">Android Image Slide</h1></p>
