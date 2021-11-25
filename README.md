@@ -20,13 +20,7 @@
 
 <a href="https://github.com/Ramotion/cardslider-android">
 <img align="left" src="https://user-images.githubusercontent.com/15522554/85434507-d3b41780-b58e-11ea-9386-42741f0921ae.gif"/></a>
-<p><h1 align="left">Android Image Slide</h1></p>
-<p>This is an android image slider library. Just add the images you want to view. </p>
-<p>You can use automatic scrolling for the time you set.  </p>
-<p>You can also add the title you want to the images.</p>
-<p>You can set corner radius images.</p>
-<p>You can use with Java or Kotlin.</p>
-</br></br>
+
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ImageSlideshow-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7587)
 [![license](https://img.shields.io/github/license/denzcoskun/imageslideshow.svg?style=popout)](https://opensource.org/licenses/Apache-2.0)
