@@ -13,8 +13,3 @@
   <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
 </ul>
 	
-<!DOCTYPE html>
-	<html>
-<head>
-	<title>ImageSlider</title>
-	<style type="text/css">
