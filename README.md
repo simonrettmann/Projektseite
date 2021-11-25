@@ -12,8 +12,10 @@
   <li> <a href="#Software"> Umsetzung der Software</a> </li> 
   <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
 </ul>
+	
+	
 
-<img align="left" src="https://user-images.githubusercontent.com/88385654/143473377-23c73895-670b-4980-9d7a-66600e0e9884.PNG"/></a>
+
 
 <img src="https://user-images.githubusercontent.com/15522554/54867096-7169d700-4d8d-11e9-8f9a-bee162a01427.png">
 <a href="https://github.com/Ramotion/cardslider-android">
