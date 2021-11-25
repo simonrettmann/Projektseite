@@ -14,7 +14,7 @@
   <li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
 </ul>
 	
-<a id="#Entstehung"> Entstehung der Idee</a>
-<p>	
+<p> <u> <h4> <a id="#Entstehung"> Entstehung der Idee </a> </u> </h4>
+
 Die Entwickler des Projektes, David und Simon, sind begeisterte Outdoor-Fans. In den Sommerferien eine Woche "Wildcampen" in Schweden und eine Studienfahrt, in der eine Woche auf der Mecklenburger-Seenplatte Kanu gefahren wurde. Neben der Natur begeistert allerdings auch das Kochen die Beiden. So kam es bei der Nahrungszubereitung bei diesen beiden Urlauben zu Problemen: Mal ist der Gaskocher zu heiß-der Reis angebrannt, mal das Wasser zu kalt - die Nudeln werden einfach nicht gar. Als in der Einführung zum Informatikunterricht die Möglichkeit eines "Physical-Computing"-Projekts genannt wurde und zuerst einige Ideen diskutiert wurden, entschieden sich die beiden schnell für einen aurdionogesteuerten Gaskocher. Die Idee für das Projekt war geboren. Ziel war es einen Gaskocher so steuern zu können, dass eine vorher eingestellte Temperatur erreicht und selbstständig gehalten werden kann. 
 	</p>
