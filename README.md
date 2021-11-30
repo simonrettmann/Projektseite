@@ -47,6 +47,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <ul>
 	<li>Arduino IDE</li>
 	Der Arduino stellt das Herzstück des Projektes dar. In der Entwicklungsoberfläche wurde das Programm geschrieben und auf den Arduino Uno gespielt.
+	
 	<details>
 		<summary>Entwicklungsoberfläche von Arduino</summary>
 		
