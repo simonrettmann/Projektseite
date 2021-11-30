@@ -85,7 +85,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <details>
 	<summary>Oberfläche von TincerCAD</summary>
 	<img width="1792" alt="Obefläche von TinkerCAD" src="https://user-images.githubusercontent.com/88385654/144115179-eeff862f-5fa8-4073-aad6-471d0d160e06.png">
-	<a href="https://www.tinkercad.com/things/58xIQMAeis5-sizzling-curcan/edit">Oberfläche von TinkerCAD</a>
+	<a href="https://www.tinkercad.com/things/58xIQMAeis5-sizzling-curcan/edit"> - Oberfläche von TinkerCAD</a>
 
 </details>
 	
@@ -95,7 +95,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <details>
 	<summary>Oberfläche von Cura</summary>
 	<img width="1792" alt="Oberfläche von Cura" src="https://user-images.githubusercontent.com/88385654/144115541-6deae014-7fc5-4551-8e25-75105fe808ac.png">
-	<a href="https://ultimaker.com/de/software/ultimaker-cura">Website von Cura</a>
+	<a href="https://ultimaker.com/de/software/ultimaker-cura"> - Website von Cura</a>
 	
 </details>
 	
