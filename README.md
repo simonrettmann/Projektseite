@@ -127,6 +127,8 @@ Die Entwickler des Projektes, David und Simon, sind begeisterte Outdoor-Fans. In
 
 <h4> <a id="Hardware"> 2️⃣  hardwaretechnische Umsetzung </a> </h4>
 
+<hr>
+	
 <h4> <a id="Reflexion"> 3️⃣  Reflexion und Fazit des Projekts </a> </h4>
 
 
