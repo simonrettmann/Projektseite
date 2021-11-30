@@ -23,7 +23,7 @@
 <b>2. Das Projekt</b>	
 
 <ul>
-	<li> <a href="#Idee"> Die Idee </a> </li> 
+	<a href="#Idee"> <li> Die Idee </a> </li> 
 	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte </a> </li>
 	<li> <a href="#Software"> softwaretechnische Umsetzung </a> </li> 
 	<li> <a href="#Hardware"> hardwaretechnische Umsetzung </a> </li>
