@@ -54,19 +54,20 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 	
 </details>
 	
-	<li>GitHub</li>
+<li>GitHub</li>
 	GitHub ist eine Software zur Versionsverwaltung von Software. Für dieses Projekt wurde GitHub für die Dokumentation genutzt, um Stundenprotokolle, eine Art Tagebuch für jede Stunde, und eine Projektseite, eine Zusammenfassung des Halbjahresprojektes, zu erstellen. 
 	
-	<li>fritzing</li>
+<li>fritzing</li>
 	Fritzing wurde genutzt, um die für die Hardware erforderlichen Steckverbindungen und eingesetzten Geräte, zu digitalisieren.
 	
-	<li>TinkerCAD</li>
+<li>TinkerCAD</li>
 	TinkerCAD ist eine Software, mit der 3-D Objekte modelliert werden können. Für das Projekt war es wichtig, eine Steckverbindung zwischen Gaskocher und Schrittmotor herzustellen. Ein dementsprechendes 3-D Modell wurde erstellt und als .stl Datei exportiert.
 	
-	<li>Cura</li>
+<li>Cura</li>
 	Die mit TinkerCAD erstellte .stl Datei kann mit Hilfe der Software Cura in einen .gcode umgewandelt werden. Dieser Dateityp ist mit 3-D Druckern kompatibel. So wurde das auf TinkerCAD erstellte Modell, nach Anpassung der Druckeinstellungen, gedruckt. 
 	
 </ul>
+
 
 <h4> <a id="Lernprozess"> 1️⃣ Erlenen der benötigten Fähigkeiten</a> </h4>
 
