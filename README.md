@@ -48,11 +48,10 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 	<li>Arduino IDE</li>
 	Der Arduino stellt das Herzstück des Projektes dar. In der Entwicklungsoberfläche wurde das Programm geschrieben und auf den Arduino Uno gespielt.
 	
-	<details>
-		<summary>Entwicklungsoberfläche von Arduino</summary>
-		
+<details>
+	<summary>Entwicklungsoberfläche von Arduino</summary>
 		<img alt="Entwicklungsoberfläche" width="1792" src="https://user-images.githubusercontent.com/88385654/144110935-967a7811-2b7d-47cb-ab8c-9f44b3a6a83d.png">
-	</details>
+</details>
 	
 	<li>GitHub</li>
 	GitHub ist eine Software zur Versionsverwaltung von Software. Für dieses Projekt wurde GitHub für die Dokumentation genutzt, um Stundenprotokolle, eine Art Tagebuch für jede Stunde, und eine Projektseite, eine Zusammenfassung des Halbjahresprojektes, zu erstellen. 
