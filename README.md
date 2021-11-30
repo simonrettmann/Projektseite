@@ -6,19 +6,31 @@
 <h3 align="left">Stormarnschule Ahrensburg <br/> Informatik, Bl <br/> Schuljahr 2021/22, 1. Halbjahr <br/> </h3> </div>
 	
 <img alt="Gif" align="center" heigth="300" width="900" src="https://user-images.githubusercontent.com/88385654/143050441-c3d92a30-9005-4314-a8f5-06cba427b260.gif">
+
 <h4>Navigation</h4>
-<ol>
-	<li><b>Grundlagen</b></li>
-</ol>
-		
+
+<b>1. Grundlagen</b>	
+
 <ul>
-	<li> <a href="#Arduino">Der Arduino - Grundlage des physical computing Projekts</a></li>
-	<li> <a href="#Software">Verwendete Software</a></li>
+	<li> <a href="#Arduino">Der Arduino - Grundlage des Physical Computing Projekts </a> </li>
+	<li> <a href="#Software">Verwendete Programme </a> </li>
+	<li> <a href="Lernprozess">Erlenen der benötigten Fähigkeite n</a> </li>
+</ul>
+
+<b>2. Das Projekt</b>	
+
+<ul>
 	<li> <a href="#Idee"> Die Idee</a> </li> 
-	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte</a> </li> 
-	<li> <a href="#Software"> Umsetzung der Software</a> </li> 
-	<li> <a href="#Hardware"> Umsetzung der Hardware</a> </li>
-</ul> </p>
+	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichtev </a> </li>
+	<li> <a href="#Software"> Umsetzung der Software </a> </li> 
+	<li> <a href="#Hardware"> Umsetzung der Hardware </a> </li>
+</ul>
+
+<b>3. Reflexion</b>
+
+<ul>
+	<li> <a href="#Reflexion"> Reflexion und Fazit des Projektes </a> </li>
+</ul>
 
 <h5> <a id="#Idee"> <ins>Die Idee</ins> </a> </h5>
 <details>
