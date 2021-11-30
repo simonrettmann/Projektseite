@@ -37,7 +37,7 @@
 
 <hr>
 
-<a id="Team"> <h4> 1️⃣ &nbsp Das Team</a> </h4>
+<a id="Team"> <h4> 1️⃣&nbspDas Team</a> </h4>
 Für dieses Halbjahresprojekt im Rahmen des Informatikunterricht, schlossen sich David Borgmann und Simon Rettmann zu einem Team zusammen. Als gute Freunde bildeten sie ein gut funktionierendes Team aus Entwicklern, das das Projekt unbedingt nach vorne bringen wollten. Beide besaßen aufgrund einer Teilnahme am Enrichement-Kurs "Das Programmieren von Microcontrollern" schon ein paar Arduinovorkenntnisse. Beigeistert ist die Gruppe vor allem von Physical Computing Projekten, weil es ermöglicht Hardware und Software zu vereinen. Somit kann im Kopf und Computer etwas gesteuert und erschaffen werden, was in der realen Welt tatsächlich funktioniert. Diese Art von Projekten fasziniert die Beiden. 
 
 <h4> <a id="Arduino"> 1️⃣ &nbsp Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
