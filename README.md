@@ -51,7 +51,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <details>
 	<summary>Entwicklungsoberfläche von Arduino</summary>
 		<img alt="Entwicklungsoberfläche" width="1792" src="https://user-images.githubusercontent.com/88385654/144110935-967a7811-2b7d-47cb-ab8c-9f44b3a6a83d.png">
-	<a href="https://www.arduino.cc"> Website von Arduino</a>
+	<a href="https://www.arduino.cc"> - Website von Arduino</a>
 	
 </details>
 	
@@ -61,7 +61,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <details>
 	<summary>Oberfläche von GitHub</summary>
 	<img alt="GitHub" width="1792" src="https://user-images.githubusercontent.com/88385654/144112129-7995500f-9060-49eb-b976-9301c159ab12.png">
-	<a href="https://github.com/">Wesite von GitHub</a>
+	<a href="https://github.com/"> - Website von GitHub</a>
 	
 </details>
 	
@@ -70,7 +70,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <details>
 	<summary>Oberfläche von fritzing</summary>
 	<img alt="fritzing" width="1792" src="https://user-images.githubusercontent.com/88385654/144112753-0cdef113-cc82-46a9-89f8-d3e3018bf087.png">
-	<a href="https://fritzing.org/"> Website von fritzing </a>
+	<a href="https://fritzing.org/"> - Website von fritzing </a>
 	
 </details>	
 <li>TinkerCAD</li>
