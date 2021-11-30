@@ -102,7 +102,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 </ul>
 
 
-<h4> <a id="Lernprozess"> 1️⃣  Erlenen der benötigten Fähigkeiten</a> </h4>
+<h4> <a id="Lernprozess"> 1️⃣ &nbsp Erlenen der benötigten Fähigkeiten</a> </h4>
 Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, begann die Gruppe immer zuerst mit der Einarbeitung in das jeweilige Programm. Dafür wurden unterschiedliche Quellen und Arten genutzt. Als besonders hilfreich haben sich YouTube-Tutorials für eine grobe Übersicht und Foreneintrage für die Beantwortung konkreter Fragen herausgestellt. Hierbei waren die am meisten verwendeten Quellen:
 
 <ul>
@@ -113,7 +113,7 @@ Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, bega
 	<li> <a href="https://www.youtube.com/c/Dronebotworkshop1"> DroneBot Workshop</a></li>
 <hr>
 
-<h4> <a id="Idee"> 2️⃣  Die Idee</a> </h4>
+<h4> <a id="Idee"> 2️⃣ &nbsp Die Idee</a> </h4>
 
 <details>
 	<summary>Mehr Infos</summary>
@@ -121,15 +121,15 @@ Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, bega
 Die Entwickler des Projektes, David und Simon, sind begeisterte Outdoor-Fans. In den Sommerferien eine Woche "Wildcampen" in Schweden und eine Studienfahrt, in der eine Woche auf der Mecklenburger-Seenplatte Kanu gefahren wurde. Neben der Natur begeistert allerdings auch das Kochen die Beiden. So kam es bei der Nahrungszubereitung bei diesen beiden Urlauben zu Problemen: Mal ist der Gaskocher zu heiß-der Reis angebrannt, mal das Wasser zu kalt - die Nudeln werden einfach nicht gar. Als in der Einführung zum Informatikunterricht die Möglichkeit eines "Physical-Computing"-Projekts genannt wurde und zuerst einige Ideen diskutiert wurden, entschieden sich die beiden schnell für einen aurdionogesteuerten Gaskocher. Die Idee für das Projekt war geboren. Ziel war es einen Gaskocher so steuern zu können, dass eine vorher eingestellte Temperatur erreicht und selbstständig gehalten werden kann.
 </details>
 
-<h4> <a id="Entwicklungsgeschichte"> 2️⃣  Entwicklungsgeschichte</a> </h4>
+<h4> <a id="Entwicklungsgeschichte"> 2️⃣ &nbsp Entwicklungsgeschichte</a> </h4>
 
-<h4> <a id="Software"> 2️⃣  softwaretechnische Umsetzung </a> </h4>
+<h4> <a id="Software"> 2️⃣ &nbsp softwaretechnische Umsetzung </a> </h4>
 
-<h4> <a id="Hardware"> 2️⃣  hardwaretechnische Umsetzung </a> </h4>
+<h4> <a id="Hardware"> 2️⃣ &nbsp hardwaretechnische Umsetzung </a> </h4>
 
 <hr>
 	
-<h4> <a id="Reflexion"> 3️⃣  Reflexion und Fazit des Projekts </a> </h4>
+<h4> <a id="Reflexion"> 3️⃣ &nbsp Reflexion und Fazit des Projekts </a> </h4>
 
 
 
