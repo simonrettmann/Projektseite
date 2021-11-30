@@ -7,14 +7,14 @@
 	
 <img alt="Gif" align="center" heigth="300" width="900" src="https://user-images.githubusercontent.com/88385654/143050441-c3d92a30-9005-4314-a8f5-06cba427b260.gif">
 
-<h4>Navigation</h4>
+<h3>Navigation</h3>
 
 <b>1. Grundlagen</b>	
 
 <ul>
 	<li> <a href="#Arduino">Der Arduino - Grundlage des Physical Computing Projekts </a> </li>
-	<li> <a href="#Software">Verwendete Programme </a> </li>
-	<li> <a href="Lernprozess">Erlenen der benötigten Fähigkeite n</a> </li>
+	<li> <a href="#Programme">Verwendete Programme </a> </li>
+	<li> <a href="#Lernprozess">Erlenen der benötigten Fähigkeiten</a> </li>
 </ul>
 
 <b>2. Das Projekt</b>	
@@ -32,8 +32,13 @@
 	<li> <a href="#Reflexion"> Reflexion und Fazit des Projektes </a> </li>
 </ul>
 
+1️⃣ <h4> <a id="#Arduino">Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
 
-<h5> <a id="#Idee"> <ins>Die Idee</ins> </a> </h5>
+1️⃣ <h4> <a id="#Programme"> Verwendete Programme</a> </h4>
+
+1️⃣ <h4> <a id="#Lernprozess">Erlenen der benötigten Fähigkeiten</a> </h4>
+
+2️⃣ <h4> <a id="#Idee"> <ins>Die Idee</ins> </a> </h4>
 <details>
 	<summary>Mehr Infos</summary>
 
