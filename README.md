@@ -14,16 +14,16 @@
 <b>1. Grundlagen</b>	
 
 <ul>
-	<a href="#Team">Das Team</a>
-	<a href="#Arduino"> <li> Der Arduino - Grundlage des Physical Computing Projekts </a> </li>
-	<a href="#Programme"> <li>Verwendete Programme </a> </li>
-	<a href="#Lernprozess"> <li> Erlenen der benötigten Fähigkeiten</a> </li>
+	<li> <a href="#Team"> Das Team </a> </li>
+	<li> <a href="#Arduino"> Der Arduino - Grundlage des Physical Computing Projekts </a> </li>
+	<li> <a href="#Programme"> Verwendete Programme </a> </li>
+	<li> <a href="#Lernprozess"> Erlenen der benötigten Fähigkeiten </a> </li>
 </ul>
 
 <b>2. Das Projekt</b>	
 
 <ul>
-	<a href="#Idee"> <li> Die Idee </a> </li> 
+	<li> <a href="#Idee"> Die Idee </a> </li> 
 	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte </a> </li>
 	<li> <a href="#Software"> softwaretechnische Umsetzung </a> </li> 
 	<li> <a href="#Hardware"> hardwaretechnische Umsetzung </a> </li>
