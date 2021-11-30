@@ -7,6 +7,8 @@
 	
 <img alt="Gif" align="center" heigth="300" width="900" src="https://user-images.githubusercontent.com/88385654/143050441-c3d92a30-9005-4314-a8f5-06cba427b260.gif">
 
+<hr>
+
 <h3>Navigation</h3>
 
 <b>1. Grundlagen</b>	
