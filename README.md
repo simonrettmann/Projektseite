@@ -26,7 +26,7 @@
 	<li> <a href="#Idee"> Die Idee </a> </li> 
 	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte </a> </li>
 	<li> <a href="#Software"> softwaretechnische Umsetzung </a> </li> 
-	<li> <a href="#Hardware"> hardwareatechnische Umsetzung </a> </li>
+	<li> <a href="#Hardware"> hardwaretechnische Umsetzung </a> </li>
 </ul>
 
 <b>3. Reflexion</b>
@@ -38,11 +38,25 @@
 <hr>
 
 <h4> <a id="#Team"> 1️⃣ Das Team</a> </h4>
-Für dieses Halbjahresprojekt im Rahmen des Informatikunterricht, schlossen sich David Borgmann und Simon Rettmann zu einem Team zusammen. Als gute Freunde bildeten sie ein gut funktionierendes Team aus Entwicklern, das das Projekt unbedingt nach vorne bringen wollten. Beide besaßen aufgrund einer Teilnahme am Enrichement-Kurs "Das Programmieren von Microcontrollern" schon einige Arduinovorkenntnisse. Beigeistert ist die Gruppe vor allem von Physical Computing Projekten, weil es ermöglicht Hardware und Software zu vereinen. Somit kann im Kopf und Computer etwas gesteuert und erschaffen werden, was in der realen Welt tatsächlich funktioniert. Diese Art von Projekten fasziniert die Beiden daher. 
+Für dieses Halbjahresprojekt im Rahmen des Informatikunterricht, schlossen sich David Borgmann und Simon Rettmann zu einem Team zusammen. Als gute Freunde bildeten sie ein gut funktionierendes Team aus Entwicklern, das das Projekt unbedingt nach vorne bringen wollten. Beide besaßen aufgrund einer Teilnahme am Enrichement-Kurs "Das Programmieren von Microcontrollern" schon ein paar Arduinovorkenntnisse. Beigeistert ist die Gruppe vor allem von Physical Computing Projekten, weil es ermöglicht Hardware und Software zu vereinen. Somit kann im Kopf und Computer etwas gesteuert und erschaffen werden, was in der realen Welt tatsächlich funktioniert. Diese Art von Projekten fasziniert die Beiden. 
 
 <h4> <a id="#Arduino"> 1️⃣ Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
 
 <h4> <a id="#Programme"> 1️⃣ Verwendete Programme</a> </h4>
+Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von verschiedenen Programmen benutzt und dessen Handhabung erlernt.
+<ul>
+	<li>Arduino IDE</li>
+	Der Arduino stellt das Herzstück des Projektes dar. In der Entwicklungsoberfläche wurde das Programm geschrieben und auf den Arduino Uno gespielt.
+	<li>GitHub</li>
+	GitHub ist eine Software zur Versionsverwaltung von Software. Für dieses Projekt wurde GitHub für die Dokumentation genutzt, um Stundenprotokolle, eine Art Tagebuch für jede Stunde, und eine Projektseite, eine Zusammenfassung des Halbjahresprojektes, zu erstellen. 
+	<li>fritzing</li>
+	Fritzing wurde genutzt, um die für die Hardware erforderlichen Steckverbindungen und eingesetzten Geräte, zu digitalisieren.
+	<li>TinkerCAD</li>
+	TinkerCAD ist eine Software, mit der 3-D Objekte modelliert werden können. Für das Projekt war es wichtig, eine Steckverbindung zwischen Gaskocher und Schrittmotor herzustellen. Ein dementsprechendes 3-D Modell wurde erstellt und als .stl Datei exportiert.
+	<li>Cura</li>
+	Die mit TinkerCAD erstellte .stl Datei kann mit Hilfe der Software Cura in einen .gcode umgewandelt werden. Dieser Dateityp ist mit 3-D Druckern kompatibel. So wurde das auf TinkerCAD erstellte Modell, nach Anpassung der Druckeinstellungen, gedruckt. 
+	
+</ul>
 
 <h4> <a id="#Lernprozess"> 1️⃣ Erlenen der benötigten Fähigkeiten</a> </h4>
 
