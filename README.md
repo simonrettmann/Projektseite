@@ -32,13 +32,13 @@
 	<li> <a href="#Reflexion"> Reflexion und Fazit des Projektes </a> </li>
 </ul>
 
-1️⃣<h4> <a id="#Arduino">Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
+<h4> <a id="#Arduino">1️⃣Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
 
-1️⃣<h4> <a id="#Programme"> Verwendete Programme</a> </h4>
+<h4> <a id="#Programme">1️⃣Verwendete Programme</a> </h4>
 
-1️⃣<h4> <a id="#Lernprozess">Erlenen der benötigten Fähigkeiten</a> </h4>
+<h4> <a id="#Lernprozess">1️⃣Erlenen der benötigten Fähigkeiten</a> </h4>
 
-2️⃣<h4> <a id="#Idee"> <ins>Die Idee</ins> </a> </h4>
+<h4> <a id="#Idee">2️⃣Die Idee</a> </h4>
 <details>
 	<summary>Mehr Infos</summary>
 
