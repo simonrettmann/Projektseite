@@ -12,6 +12,7 @@
 <b>1. Grundlagen</b>	
 
 <ul>
+	<li> <a href="#Team">Das Team </a> </li>
 	<li> <a href="#Arduino">Der Arduino - Grundlage des Physical Computing Projekts </a> </li>
 	<li> <a href="#Programme">Verwendete Programme </a> </li>
 	<li> <a href="#Lernprozess">Erlenen der benötigten Fähigkeiten</a> </li>
@@ -31,6 +32,9 @@
 <ul>
 	<li> <a href="#Reflexion"> Reflexion und Fazit des Projektes </a> </li>
 </ul>
+
+<h4> <a id="#Team"> 1️⃣ Das Team</a> </h4>
+Für dieses Halbjahresprojekt im Rahmen des Informatikunterricht, schlossen sich David Borgmann und Simon Rettmann zu einem Team zusammen. Als gute Freunde bildeten sie ein gut funktionierendes Team aus Entwicklern, das das Projekt unbedingt nach vorne bringen wollten. Beide besaßen aufgrund einer Teilnahme am Enrichement-Kurs "Das Programmieren von Microcontrollern" schon einige Arduinovorkenntnisse. Beigeistert ist die Gruppe vor allem von Physical Computing Projekten, weil es ermöglicht Hardware und Software zu vereinen. Somit kann im Kopf und Computer etwas gesteuert und erschaffen werden, was in der realen Welt tatsächlich funktioniert. Diese Art von Projekten fasziniert die Beiden daher. 
 
 <h4> <a id="#Arduino"> 1️⃣ Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
 
@@ -55,6 +59,4 @@ Die Entwickler des Projektes, David und Simon, sind begeisterte Outdoor-Fans. In
 <h4> <a id="#Reflexion"> 3️⃣ Reflexion und Fazit des Projekts </a> </h4>
 
 
-
-<h5> <a id="#Die Funktionsweise"> <ins>Die Funktionsweise</ins> </a> </h5>
 
