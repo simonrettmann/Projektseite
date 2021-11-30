@@ -84,6 +84,8 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 
 <h4> <a id="Lernprozess"> 1️⃣ Erlenen der benötigten Fähigkeiten</a> </h4>
 
+<hr>
+
 <h4> <a id="Idee"> 2️⃣ Die Idee</a> </h4>
 
 <details>
