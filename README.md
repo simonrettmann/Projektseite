@@ -47,10 +47,11 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 <ul>
 	<li>Arduino IDE</li>
 	Der Arduino stellt das Herzstück des Projektes dar. In der Entwicklungsoberfläche wurde das Programm geschrieben und auf den Arduino Uno gespielt.
-	
+		 
 <details>
 	<summary>Entwicklungsoberfläche von Arduino</summary>
 		<img alt="Entwicklungsoberfläche" width="1792" src="https://user-images.githubusercontent.com/88385654/144110935-967a7811-2b7d-47cb-ab8c-9f44b3a6a83d.png">
+	<a href="https://www.arduino.cc"> Website von Arduino</a>
 	
 </details>
 	
@@ -59,13 +60,19 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 	
 <details>
 	<summary>Oberfläche von GitHub</summary>
-	<img alt="GitHub" width="1792" src="<img width="1792" src="https://user-images.githubusercontent.com/88385654/144112129-7995500f-9060-49eb-b976-9301c159ab12.png">
+	<img alt="GitHub" width="1792" src="https://user-images.githubusercontent.com/88385654/144112129-7995500f-9060-49eb-b976-9301c159ab12.png">
+	<a href="https://github.com/">Wesite von GitHub</a>
 	
 </details>
 	
 <li>fritzing</li>
 	Fritzing wurde genutzt, um die für die Hardware erforderlichen Steckverbindungen und eingesetzten Geräte, zu digitalisieren.
+<details>
+	<summary>Oberfläche von fritzing</summary>
+	<img alt="fritzing" width="1792" src="https://user-images.githubusercontent.com/88385654/144112753-0cdef113-cc82-46a9-89f8-d3e3018bf087.png">
+	<a href="https://fritzing.org/"> Website von fritzing </a>
 	
+</details>	
 <li>TinkerCAD</li>
 	TinkerCAD ist eine Software, mit der 3-D Objekte modelliert werden können. Für das Projekt war es wichtig, eine Steckverbindung zwischen Gaskocher und Schrittmotor herzustellen. Ein dementsprechendes 3-D Modell wurde erstellt und als .stl Datei exportiert.
 	
