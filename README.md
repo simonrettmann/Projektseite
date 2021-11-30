@@ -1,6 +1,6 @@
 <html>
 <head>
-<h1 align="center">Der arudionogesteuerte Gaskocher - Projektseite</h1> 
+<h1 align="center">Der arduinogesteuerte Gaskocher - Projektseite</h1> 
 </head>
 <h3 align="center"> Ein Projekt von David Borgmann und Simon Rettmann</h3>
 <h3 align="left">Stormarnschule Ahrensburg <br/> Informatik, Bl <br/> Schuljahr 2021/22, 1. Halbjahr <br/> </h3> </div>
