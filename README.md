@@ -111,6 +111,7 @@ Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, bega
 	<li> <a href="https://www.youtube.com/watch?v=RGOj5yH7evk"> Git and GitHub for Beginners - Crash Course</a></li>
 	<li> <a href="https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg"> HTML-Tutorials</a></li>	
 	<li> <a href="https://www.youtube.com/c/Dronebotworkshop1"> DroneBot Workshop</a></li>
+</ul>
 	
 <hr>
 
