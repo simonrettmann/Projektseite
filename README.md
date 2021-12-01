@@ -24,7 +24,7 @@
 
 <ul>
 	<li> <a href="#Idee"> Die Idee </a> </li> 
-	<li> <a href="#Entwicklungsgeschichte"> Entwicklungsgeschichte </a> </li>
+	<li> <a href="#Entwicklungsprozess"> Entwicklungsprozess </a> </li>
 	<li> <a href="#Software"> softwaretechnische Umsetzung </a> </li> 
 	<li> <a href="#Hardware"> hardwaretechnische Umsetzung </a> </li>
 	<li> <a href="#Produkt"> Das Endprodukt </a> </li>
@@ -125,7 +125,7 @@ Bei einem Gaskocher, insbesondere einem Campinggaskocher, wird diese Problem wei
 Da die Temperatur beim Backen von Kuchen und Keksen von einer größerer Bedeutung als beim Kochen ist, gab es in dieser Branche bereits einen Wechsel hin zu temperaturregulierten Öfen. Beim Kochen fehlt diese Veränderung, obwohl es auch dort für den Benutzer deutlich transparenter wäre und einige Gerichte eine präzise Einstellung erfordern. 
 Beispiele für Gerichte, bei denen es auf eine genaue Temperierung ankommt sind die Herstellung von Karamell, das Schmelzen von Schokolade oder das Sous vide garen von Steaks. Daher stellt dieses Informatikprojekt einen ersten Schritt in der Revolution des Kochens dar und bietet dem Benutzer ein besseres Kocherlebnis. 
 	
-<h4> <a id="Entwicklungsgeschichte"> 2️⃣ &nbsp Entwicklungsgeschichte</a> </h4>
+<h4> <a id="Entwicklungsprozess"> 2️⃣ &nbsp Entwicklungsprozess</a> </h4>
 
 <h4> <a id="Software"> 2️⃣ &nbsp softwaretechnische Umsetzung </a> </h4>
 
