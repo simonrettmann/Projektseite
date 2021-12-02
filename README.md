@@ -132,10 +132,8 @@ Um den zeitlichen Ablauf des Entwicklungsprozesses graphsich anschaulich und tra
 
 <details>
 	<summary>zeitlicher Ablauf des Entwicklungsprozesses</summary>
-		<img alt="zeitlicher Ablauf" src="https://user-images.githubusercontent.com/88385654/144393606-60cb2b03-d077-436f-a9f6-d4355745f4de.png">
+		<img alt="zeitlicher Ablauf" src="https://user-images.githubusercontent.com/88385654/144395754-24319105-3f47-42e6-99ec-6d0e5d974ef3.png">
 </details>
-		
-
 
 <h4> <a id="Software"> 2️⃣ &nbsp softwaretechnische Umsetzung </a> </h4>
 
