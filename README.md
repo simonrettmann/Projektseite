@@ -127,6 +127,16 @@ Beispiele für Gerichte, bei denen es auf eine genaue Temperierung ankommt sind 
 	
 <h4> <a id="Entwicklungsprozess"> 2️⃣ &nbsp Entwicklungsprozess</a> </h4>
 
+Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit einer Brainstormingphase und dem Aufgreifen der Idee des arduinogesteuerten Gaskochers. Es folgte ein viermonatiger Entwicklungsprozess, in dem eine Software geschrieben wurde, die ein Thermometer auslesen kann, einen über ein rotary encoder eingestellten Wert mit dem gemessenen Wert ins Verhältnis setzt und auf dieser Grundlage einen Schrittmotor anspricht. Außerdem wurde die Hardware so entwickelt, dass ein Gaskocher an eine Gasflasche angeschlossen wird und ein Schrittmotor über eine Halterung an das Ventil der Gasflasche montiert ist und dieses Öffnen kann. Ein Topf wurde so präpariert, dass ein Thermometer, wasserdicht verpackt, durch ein Loch im Deckel mit dem Wasser in Berührung kommt und die Temperatur messen. 
+Um den zeitlichen Ablauf des Entwicklungsprozesses graphsich anschaulich und transparent darzustellen, wurde eine Zeitleiste erstellt.
+
+<details>
+	<summary>zeitlicher Ablauf des Entwicklungsprozesses</summary>
+		<img alt="zeitlicher Ablauf" src="https://user-images.githubusercontent.com/88385654/144393606-60cb2b03-d077-436f-a9f6-d4355745f4de.png">
+</details>
+		
+
+
 <h4> <a id="Software"> 2️⃣ &nbsp softwaretechnische Umsetzung </a> </h4>
 
 <h4> <a id="Hardware"> 2️⃣ &nbsp hardwaretechnische Umsetzung </a> </h4>
