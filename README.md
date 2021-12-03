@@ -141,6 +141,11 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 <h4> <a id="Hardware"> &#10122; &nbsp hardwaretechnische Umsetzung </a> </h4>
 
 <h4> <a id="Produkt"> &#10122; &nbsp Das Endprodukt </a> </h4>
+<details>
+	<summary>Video eines erfolgreichen Experiments - novum hotplate</summary>
+<a href="https://www.youtube.com/watch?v=mMkYHf9HaGQ&t"> <img src="https://user-images.githubusercontent.com/88385654/144663860-19e3b678-31f6-41d4-84ab-b127c74e58e5.jpeg">
+</details>
+	
 <hr>
 	
 <h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
