@@ -38,15 +38,15 @@
 
 <hr>
 
-<h4> <a id="Team"> 1️⃣ &nbsp Das Team</a> </h4>
+<h4> <a id="Team"> &#10122; &nbsp Das Team</a> </h4>
 Für dieses Halbjahresprojekt im Rahmen des Informatikunterricht, schlossen sich David Borgmann und Simon Rettmann zu einem Team zusammen. Als gute Freunde bildeten sie ein gut funktionierendes Team aus Entwicklern, das das Projekt unbedingt nach vorne bringen wollten. Beide besaßen aufgrund einer Teilnahme am Enrichement-Kurs "Das Programmieren von Microcontrollern" schon ein paar Arduinovorkenntnisse. Beigeistert ist die Gruppe vor allem von Physical Computing Projekten, weil es ermöglicht Hardware und Software zu vereinen. Somit kann im Kopf und Computer etwas gesteuert und erschaffen werden, was in der realen Welt tatsächlich funktioniert. Diese Art von Projekten fasziniert die Beiden. 
 
-<h4> <a id="Arduino"> 1️⃣ &nbsp Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
+<h4> <a id="Arduino"> &#10122; &nbsp Der Arduino - Grundlage des Physical Computing Projekts</a> </h4>
 Bei dem arduinogesteuertem Gaskocher handelt es sich um ein Physical Computing Projekt. Das bedeutet, dass Anwendungen der Informatik in Wechselwirkung mit der Umwelt stehen. Dazu ist sowohl Hardware, welche mit der physischen Umwelt im Kontakt steht, als auch Software, welche die Hardware interaktiv mit „Leben“ füllt, nötig. Arduino bietet bei diesem Projekt die Plattform, welche die Umsetztung des Projektes ermöglicht. Arduino ist eine aus Soft- und Hardware bestehende open-source Physical Computing-Plattform. 
 Das Herzstück der Hardware ist dabei der Micro-Controller, in diesem Fall der Arduino UNO R3. Bei dem UNO handelt es sich um das Standard-Modell des Repertoires. Dieser ist günstig und für viele Projekte im Bezug auf Rechenleistung, Speicher und Anschlussmöglichkeiten völlig ausreichend.
 Programmiert wird der Microcontroller mithilfe der integrierten Entwicklungsumgebung. Es handelt sich um eine plattformübergreifende Anwendung. Die Programmiersprache beinhaltet Elemente aus C, C++ und AVR-Assembler und der Code lässt sich von einem Computer mithilfe eines USB-Anschlusses auf den UNO übertragen.
 
-<h4> <a id="Programme"> 1️⃣ &nbsp Verwendete Programme</a> </h4>
+<h4> <a id="Programme"> &#10122; &nbsp Verwendete Programme</a> </h4>
 Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von verschiedenen Programmen benutzt und dessen Handhabung erlernt.
 
 <ul>
@@ -103,7 +103,7 @@ Zur präzisen Umsetzung und ansprechenden Dokumentation wurde eine Vielzahl von 
 </ul>
 
 
-<h4> <a id="Lernprozess"> 1️⃣ &nbsp Erlenen der benötigten Fähigkeiten</a> </h4>
+<h4> <a id="Lernprozess"> &#10122; &nbsp Erlenen der benötigten Fähigkeiten</a> </h4>
 Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, begann die Gruppe immer zuerst mit der Einarbeitung in das jeweilige Programm. Dafür wurden unterschiedliche Quellen und Arten genutzt. Als besonders hilfreich haben sich YouTube-Tutorials für eine grobe Übersicht und Foreneintrage für die Beantwortung konkreter Fragen herausgestellt. Hierbei waren die am meisten verwendeten Quellen:
 
 <ul>
@@ -116,7 +116,7 @@ Damit diese Vielzahl von Programmen auch sinnvoll eingesetzt werden konnte, bega
 	
 <hr>
 
-<h4> <a id="Idee"> 2️⃣ &nbsp Die Idee</a> </h4>
+<h4> <a id="Idee"> &#10123; &nbsp Die Idee</a> </h4>
 
 Die Entwickler des Projektes, David und Simon, sind begeisterte Outdoor-Fans. In den Sommerferien eine Woche "Wildcampen" in Schweden und eine Studienfahrt, in der eine Woche auf der Mecklenburger-Seenplatte Kanu gefahren wurde. Neben der Natur begeistert allerdings auch das Kochen die Beiden. So kam es bei der Nahrungszubereitung bei diesen beiden Urlauben zu Problemen: Mal ist der Gaskocher zu heiß - der Reis angebrannt, mal das Wasser zu kalt - die Nudeln werden einfach nicht gar. Als in der Einführung zum Informatikunterricht die Möglichkeit eines "Physical-Computing"-Projekts genannt wurde und zuerst einige Ideen diskutiert wurden, entschieden sich die beiden schnell für einen aurdionogesteuerten Gaskocher. Die Idee für das Projekt war geboren. Ziel war es einen Gaskocher so steuern zu können, dass eine vorher eingestellte Temperatur erreicht und selbstständig gehalten werden kann.
 
@@ -125,7 +125,7 @@ Bei einem Gaskocher, insbesondere einem Campinggaskocher, wird diese Problem wei
 Da die Temperatur beim Backen von Kuchen und Keksen von einer größerer Bedeutung als beim Kochen ist, gab es in dieser Branche bereits einen Wechsel hin zu temperaturregulierten Öfen. Beim Kochen fehlt diese Veränderung, obwohl es auch dort für den Benutzer deutlich transparenter wäre und einige Gerichte eine präzise Einstellung erfordern. 
 Beispiele für Gerichte, bei denen es auf eine genaue Temperierung ankommt sind die Herstellung von Karamell, das Schmelzen von Schokolade oder das Sous vide garen von Steaks. Daher stellt dieses Informatikprojekt einen ersten Schritt in der Revolution des Kochens dar und bietet dem Benutzer ein besseres Kocherlebnis. 
 	
-<h4> <a id="Entwicklungsprozess"> 2️⃣ &nbsp Entwicklungsprozess</a> </h4>
+<h4> <a id="Entwicklungsprozess"> &#10123; &nbsp Entwicklungsprozess</a> </h4>
 
 Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit einer Brainstormingphase und dem Aufgreifen der Idee des arduinogesteuerten Gaskochers. Es folgte ein viermonatiger Entwicklungsprozess, in dem eine Software geschrieben wurde, die ein Thermometer auslesen kann, einen über ein rotary encoder eingestellten Wert mit dem gemessenen Wert ins Verhältnis setzt und auf dieser Grundlage einen Schrittmotor anspricht. Außerdem wurde die Hardware so entwickelt, dass ein Gaskocher an eine Gasflasche angeschlossen wird und ein Schrittmotor über eine Halterung an das Ventil der Gasflasche montiert ist und dieses Öffnen kann. Ein Topf wurde so präpariert, dass ein Thermometer, wasserdicht verpackt, durch ein Loch im Deckel mit dem Wasser in Berührung kommt und die Temperatur misst. <br> Um den zeitlichen Ablauf des Entwicklungsprozesses graphsich anschaulich und transparent darzustellen, wurde eine Zeitleiste erstellt.
 
@@ -134,14 +134,14 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 		<img alt="zeitlicher Ablauf" src="https://user-images.githubusercontent.com/88385654/144395754-24319105-3f47-42e6-99ec-6d0e5d974ef3.png">
 </details>
 
-<h4> <a id="Software"> 2️⃣ &nbsp softwaretechnische Umsetzung </a> </h4>
+<h4> <a id="Software"> &#10122; &nbsp softwaretechnische Umsetzung </a> </h4>
 
-<h4> <a id="Hardware"> 2️⃣ &nbsp hardwaretechnische Umsetzung </a> </h4>
+<h4> <a id="Hardware"> &#10122; &nbsp hardwaretechnische Umsetzung </a> </h4>
 
-<h4> <a id="Produkt"> 2️⃣ &nbsp Das Endprodukt </a> </h4>
+<h4> <a id="Produkt"> &#10122; &nbsp Das Endprodukt </a> </h4>
 <hr>
 	
-<h4> <a id="Reflexion"> 3️⃣ &nbsp Reflexion und Fazit des Projekts </a> </h4>
+<h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
 
 
 
