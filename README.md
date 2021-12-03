@@ -5,7 +5,7 @@
 <h3 align="center"> Ein Projekt von David Borgmann und Simon Rettmann</h3>
 <h3 align="left">Stormarnschule Ahrensburg <br/> Informatik, Bl <br/> Schuljahr 2021/22, 1. Halbjahr <br/> </h3> </div>
 
-<img alt="Animation" src="https://user-images.githubusercontent.com/88385654/144623893-6f0cc461-51c3-482b-9b71-249c5bbc17ad.gif">
+<img alt="Animation" width="500" src="https://user-images.githubusercontent.com/88385654/144623893-6f0cc461-51c3-482b-9b71-249c5bbc17ad.gif">
 
 
 <hr>
