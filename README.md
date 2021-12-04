@@ -140,13 +140,56 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 <h4> <a id="Hardware"> &#10122; &nbsp hardwaretechnische Umsetzung </a> </h4>
 
 <h4> <a id="Produkt"> &#10122; &nbsp Das Endprodukt </a> </h4>
+
 <details>
 	<summary>Video eines erfolgreichen Experiments - novum hotplate</summary>
 <a href="https://www.youtube.com/watch?v=mMkYHf9HaGQ&t"> <img src="https://user-images.githubusercontent.com/88385654/144663860-19e3b678-31f6-41d4-84ab-b127c74e58e5.jpeg">
-	
 </details>
 	
-<hr>
+<details> 
+	<summary>Bilder der Verbindung von Schrittmotor zum Gasregler</summary>
+<b> Bild der Verbindung von oben </b> <img alt="Bild der Verbindung von oben #1" src="https://user-images.githubusercontent.com/88385654/144712415-9438f4ad-bb94-4634-9735-5d4a1ef488c8.jpg">
+<b> Bild der Verbindung von oben #2 </b> <img alt="Bild der Verbindung von oben #2" src="https://user-images.githubusercontent.com/88385654/144712443-f4b32d50-2695-4c6b-a35f-74440c7bcfd3.jpg">
+<b>Bild der Verbindung von der Seite</b> <img alt="Bild der Verbindung von der Seite" src="https://user-images.githubusercontent.com/88385654/144712447-8eb4af4b-4a83-41d2-b094-f6fb76846b28.jpg">
+</details>
+	
+<details> 
+	<summary>Bild der Verbindung vom Ventil der Gasflasche zur Befestigung des Schrittmotors</summary>
+<b>Verbindung vom Ventil der Gasflasche zur Befestigung des Schrittmotors</b> <img alt="Bild der Verbindung Gasflasche - Befestigung" src="https://user-images.githubusercontent.com/88385654/144712515-e62ca042-f9e7-4525-9306-8daab9ce9ac8.jpg">
+</details>	
+
+<details> 
+	<summary>Bild des Gaskochers</summary>
+<b> Bild des Gaskochers</b> <img alt="Bild des Gaskochers" src="https://user-images.githubusercontent.com/88385654/144712667-099b86cd-aeeb-4291-8455-68a8a97586e7.jpg">
+</details>
+
+<details>
+	<summary>Bilder des Topfes mit integriertem Thermometer</summary>
+<b>Bild des geschlossenen Topfes von oben</b> <img alt="Bild des Topfes von oben" src="https://user-images.githubusercontent.com/88385654/144713410-7d113ccb-af0e-4b76-aa14-580f5a456b78.jpg"> 
+<b>geschlossener Topf von der Seite</b> <img alt="Bild des Topfes von der Seite" src="https://user-images.githubusercontent.com/88385654/144713517-ac251685-7834-47ec-8a22-06eedeef4d6d.jpg">
+<b>Bild des integrierten Thermometers von unten</b> <img alt="Bild des Thermometers von unten" src="https://user-images.githubusercontent.com/88385654/144713521-86303ce7-36a7-44f6-b49f-6ef1a144bd0f.jpg">
+</details>
+	
+<details>
+	<summary>Bilder des Netzteils</summary>
+<b>Netzteil von vorne</b> <img alt="Netzteil" src="https://user-images.githubusercontent.com/88385654/144712838-272ec29c-0eb4-4f05-9d9c-32df7a695509.jpg">
+<b>Bild der Klemmverbindung</b> <img alt="Klemmverbindung" src="https://user-images.githubusercontent.com/88385654/144712872-0bb5fea9-4ed0-4356-b207-e64660f0057f.jpg">
+</details>
+
+<details>
+	<summary>Bilder des LC-Displays</summary>
+<b>ausgeschaltet LC-Display</b><img alt="Display off" src="https://user-images.githubusercontent.com/88385654/144713053-fa4b06a1-84c8-404d-948b-11c1c76b1671.jpg">
+<b>eingeschaltetes LC-Display</b><img alt="Display on" src="https://user-images.githubusercontent.com/88385654/144713076-88889dc2-449d-420a-ba7f-bdd674039c22.jpg">
+</details>
+	
+<details>
+	<summary>Steckverbindungen</summary>
+<b>digitalisierter Schaltplan von fritzing</b> <img alt="digitaler Schaltplan" src="">
+<b>Steckverbindung des Schrittmotors</b> <img alt="Steckverbindung des Schrittmotors" src="https://user-images.githubusercontent.com/88385654/144713178-4dc65553-10ac-4708-bc5a-465017ca3dc8.jpg">
+<b>Steckverbindung des rotary encoders</b> <img alt="Steckverbindung rotary encoder" src="https://user-images.githubusercontent.com/88385654/144713214-fa8f43f1-de85-4387-8a83-e92b9f6d5d65.jpg">
+<b>Steckverbindung des Thermometers</b> <img alt="https://user-images.githubusercontent.com/88385654/144713242-cf867406-5674-4c8a-95bd-096a48159876.jpg">
+<b>Übersicht der Steckverbindungen</b> <img alt="https://user-images.githubusercontent.com/88385654/144713257-0644e4bb-effb-4a7d-a74f-b533f7beaf0b.jpg">
+</details>
 	
 <h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
 
