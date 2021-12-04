@@ -10,7 +10,6 @@
 
 <br>
 <hr>
-<br>
 <h3>Navigation</h3>
 
 <b>1. Grundlagen</b>	
