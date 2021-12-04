@@ -224,6 +224,12 @@ Der viermonatige Entwicklungsprozess mit vielen Testungen und Lösungen von Prob
 
 <h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
 
+Der arduinogesteuerte Gaskocher - aus einer spontanen Idee ist Wirklichkeit geworden. Grundsätzlich lässt sich festhalten, dass die Gruppe mit dem Prototypen und der graphsichen Darstellung des Projektes sehr zufrieden ist. Auch wenn der Entwicklungsprozess mit hohem zeitlichen Aufwand, einigen sehr kurzen Nächten und manchmal auch Flucherei verbunden war, überwog dauerhaft der Wille das Projekt nach vorne zu bringen und die eigenen Kenntnisse zu erweitern. <br>
+Durch diese Projektarbeit gewonnen beide Gruppenmitglieder große Einblilcke in das Programmieren von Microcontrollern und die Darstellung von Informationen mit HTML. Wie in dem Punkt "verwendete Programme" dargestellt, wurden auf dem Weg des Projekts aber auch viele andere Fähigkeiten hinzugewonnen. Beispielhaft dafür ist das Erstellen und Drucken von 3D-Modellen oder die Erstellung von YouTube-Videos. Für diese Möglichkeit ist die Gruppe sehr dankbar. Hierdrin besteht auch ein großer Vorteil bei physical computing Projekten, da arbeiten auf ganz unterschiedlichen Ebenen erledigt werden müssen. Dadurch werden Projekte natürlich schnell anspruchsvoll, aber eben auch sehr vielseitig. <br>
+Die zurückliegende Gruppenarbeit wurde anhand von verschieden Kriterien beurteilt und reflektiert. 
+
+
+
 <h4> <a id="Ausblick"> &#10124; &nbsp Ausblick auf kommende Veränderungen </a> </h4>
 
 
