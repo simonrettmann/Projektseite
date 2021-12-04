@@ -6,8 +6,7 @@
 <h3 align="left">Stormarnschule Ahrensburg <br/> Informatik, Bl <br/> Schuljahr 2021/22, 1. Halbjahr </br> </h3> </div>
 <h3 alighn0"left"> &#10132; <a href="https://github.com/simonrettmann/Stundenprotokolle"> Stundenprotokolle</a> </h3>
 
-<img alt="Animation" width="1000" height="300" align="center" src="https://user-images.githubusercontent.com/88385654/144623893-6f0cc461-51c3-482b-9b71-249c5bbc17ad.gif">
-
+<img alt="Animation" width="1000" height="300" align="center" src="https://user-images.githubusercontent.com/88385654/144711039-e3602339-827f-42a6-b684-b21d3ee8bcf1.gif">
 
 <hr>
 
