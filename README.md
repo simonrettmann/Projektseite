@@ -219,7 +219,9 @@ Der viermonatige Entwicklungsprozess mit vielen Testungen und Lösungen von Prob
 <b>Steckverbindung des Thermometers</b> <img alt="Steckverbindung Thermometer" src="https://user-images.githubusercontent.com/88385654/144713242-cf867406-5674-4c8a-95bd-096a48159876.jpg">
 <b>Übersicht der Steckverbindungen</b> <img alt="Übersicht Steckverbindung" src="https://user-images.githubusercontent.com/88385654/144713257-0644e4bb-effb-4a7d-a74f-b533f7beaf0b.jpg">
 </details>
-	
+
+<hr>
+
 <h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
 
 <h4> <a id="Ausblick"> &#10124; &nbsp Ausblick auf kommende Veränderungen </a> </h4>
