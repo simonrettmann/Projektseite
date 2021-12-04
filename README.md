@@ -143,8 +143,8 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 
 <details>
 	<summary>Video eines erfolgreichen Experiments - novum hotplate</summary>
-<a href="https://www.youtube.com/watch?v=mMkYHf9HaGQ&t"> <img src="https://user-images.githubusercontent.com/88385654/144663860-19e3b678-31f6-41d4-84ab-b127c74e58e5.jpeg">
-</details>
+<a href="https://www.youtube.com/watch?v=mMkYHf9HaGQ&t"> <img src="https://user-images.githubusercontent.com/88385654/144663860-19e3b678-31f6-41d4-84ab-b127c74e58e5.jpeg"></a>
+</details> 
 	
 <details> 
 	<summary>Bilder der Verbindung von Schrittmotor zum Gasregler</summary>
