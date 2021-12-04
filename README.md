@@ -187,8 +187,8 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 <b>digitalisierter Schaltplan von fritzing</b> <img alt="digitaler Schaltplan" src="">
 <b>Steckverbindung des Schrittmotors</b> <img alt="Steckverbindung des Schrittmotors" src="https://user-images.githubusercontent.com/88385654/144713178-4dc65553-10ac-4708-bc5a-465017ca3dc8.jpg">
 <b>Steckverbindung des rotary encoders</b> <img alt="Steckverbindung rotary encoder" src="https://user-images.githubusercontent.com/88385654/144713214-fa8f43f1-de85-4387-8a83-e92b9f6d5d65.jpg">
-<b>Steckverbindung des Thermometers</b> <img alt="https://user-images.githubusercontent.com/88385654/144713242-cf867406-5674-4c8a-95bd-096a48159876.jpg">
-<b>Übersicht der Steckverbindungen</b> <img alt="https://user-images.githubusercontent.com/88385654/144713257-0644e4bb-effb-4a7d-a74f-b533f7beaf0b.jpg">
+<b>Steckverbindung des Thermometers</b> <img alt="Steckverbindung Thermometer" src="https://user-images.githubusercontent.com/88385654/144713242-cf867406-5674-4c8a-95bd-096a48159876.jpg">
+<b>Übersicht der Steckverbindungen</b> <img alt="Übersicht Steckverbindung" src="https://user-images.githubusercontent.com/88385654/144713257-0644e4bb-effb-4a7d-a74f-b533f7beaf0b.jpg">
 </details>
 	
 <h4> <a id="Reflexion"> &#10124; &nbsp Reflexion und Fazit des Projekts </a> </h4>
