@@ -7,7 +7,7 @@
 <h3 align="left"> &#10132; <a href="https://github.com/simonrettmann/Stundenprotokolle"> Stundenprotokolle</a> </h3>
 <br>
 
-&nbsp; &nbsp; &nbsp; &nbsp; <img align="center" alt="Animation" width="700" height="400" src="https://user-images.githubusercontent.com/88385654/144711039-e3602339-827f-42a6-b684-b21d3ee8bcf1.gif">
+&nbsp &nbsp &nbsp &nbsp <img align="center" alt="Animation" width="700" height="400" src="https://user-images.githubusercontent.com/88385654/144711039-e3602339-827f-42a6-b684-b21d3ee8bcf1.gif">
 
 <br>
 <hr>
