@@ -136,6 +136,8 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 </details>
 
 <h4> <a id="Software"> &#10122; &nbsp softwaretechnische Umsetzung </a> </h4>
+Die Aufgabe der Software ist es, unter Berücksichtigung der eingestellten Zieltemperatur, die gemessene Temperatur in ein Öffnungsgrad des Ventils zu übertragen. Dazu werden verschiedene Werte erhoben, welche tatsächlich durch die physische Umwelt oder den Benutzer des Produktes verändert werden:![image](https://user-images.githubusercontent.com/88385654/144713805-10dec92e-aef9-4b36-9ec0-fe3b24ea533c.png)
+Die Aufgabe der Software ist es, unter Berücksichtigung der eingestellten Zieltemperatur, die gemessene Temperatur in ein Öffnungsgrad des Ventils zu übertragen. Dazu werden verschiedene Werte erhoben, welche tatsächlich durch die physische Umwelt oder den Benutzer des Produktes verändert werden:![image](https://user-images.githubusercontent.com/88385654/144713832-00922c8c-56c9-40c0-aa78-12cb5950c7ea.png)
 
 <h4> <a id="Hardware"> &#10122; &nbsp hardwaretechnische Umsetzung </a> </h4>
 
