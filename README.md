@@ -8,8 +8,8 @@
 
 <img alt="Animation" width="500" height="300" align="center" src="https://user-images.githubusercontent.com/88385654/144711039-e3602339-827f-42a6-b684-b21d3ee8bcf1.gif">
 
-<hr>
 <br>
+<hr>
 <br>
 <h3>Navigation</h3>
 
