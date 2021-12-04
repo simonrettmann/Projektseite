@@ -158,7 +158,7 @@ Nach der Aktualisierung der verschiedenen Anzeigen wird mit dem Herzstück des C
 Nun wird mit einer mathematischen Funktion ermittelt, wie groß die Öffnung des Ventils in % entsprechend der Temperaturdifferenz sein muss. Der f(x)-Wert der Funktion steht für die Ventilöffnung in Prozent und ist eine „Float“-Variable mit dem Namen „pVentil“. Der x-Wert der Funktion ist die Temperaturdifferenz „tempDifferenz“. Jeder Temperaturdifferenz soll eine Ventilöffnung in Prozent zugeordnet werden. Grundsätzlich muss folgender Zusammenhang gelten: Je größer die Temperaturdifferenz, desto großer die prozentuale Ventilöffnung. Ein einfacher linearer Zusammenhang eignet sich aber nicht, da so lange wie möglich viel Hitze erzeugt werden soll, damit sich der Topf schnell aufheizen kann. Das Projekt soll den Kochprozess vereinfachen und nicht unnötig in die Länge ziehen. Jedoch ist es ebenso wichtig, dass bei geringer Temperaturdifferenz die Flamme zunehmend kleiner wird, um das exakte Erreichen der Zieltemperatur zu gewährleisten. Folglich scheint es sinnvoll eine Funktion zu nehmen, welche eine logistische Kurve aufweist. Die Entscheidung fiel nach vielen Versuchen mit unterschiedlichen Funktionen auf folgende Funktion: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 
 <details>
-	<summary>Graph der Funktion<summary>
+	<summary>Graph der Funktion</summary>
 </details> 
 		
 <br>
