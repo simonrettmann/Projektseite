@@ -147,7 +147,7 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 </details> 
 	
 <details> 
-	<summary>Bilder der Verbindung von Schrittmotor zum Gasregler</summary>
+	<summary>Bilder der Verbindung vom Schrittmotor zum Gasregler</summary>
 <b> Bild der Verbindung von oben </b> <img alt="Bild der Verbindung von oben #1" src="https://user-images.githubusercontent.com/88385654/144712415-9438f4ad-bb94-4634-9735-5d4a1ef488c8.jpg">
 <b> Bild der Verbindung von oben #2 </b> <img alt="Bild der Verbindung von oben #2" src="https://user-images.githubusercontent.com/88385654/144712443-f4b32d50-2695-4c6b-a35f-74440c7bcfd3.jpg">
 <b>Bild der Verbindung von der Seite</b> <img alt="Bild der Verbindung von der Seite" src="https://user-images.githubusercontent.com/88385654/144712447-8eb4af4b-4a83-41d2-b094-f6fb76846b28.jpg">
