@@ -184,6 +184,7 @@ Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realit
 		
 <details>
 	<summary>Bilder des Thermometers</summary>
+	
 <b>Produktfoto von Amazon</b> <img alt="Foto von Amazon" src="https://user-images.githubusercontent.com/88385654/144747225-fcb04dbb-05b6-4ce7-90b7-404dee4d755c.jpg">
 <b>abgedichtetes Thermometer von der Seite</b> <img alt="Thermometer von der Seite" src="https://user-images.githubusercontent.com/88385654/144747285-2ef88078-3c94-4cbe-ad3c-f3cbb8325a52.jpg">
 <b>abgedichtetes Thermometer von oben</b> <img alt="Thermometer von oben" src="https://user-images.githubusercontent.com/88385654/144747339-24c4b179-e3e3-4dc5-b00e-c582d85e4a4a.jpg">
@@ -197,10 +198,21 @@ Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realit
 
 <details>
 	<summary>Bilder des Schrittmotors</summary>
+	
 <b>Produktbild von digikey</b> <img alt="Produktbild" src="https://user-images.githubusercontent.com/88385654/144747822-e6f11729-bca4-4690-b1ac-8fdc9646971a.jpg">
 <b>Bild des 3D-Verbindungsstückes</b> <img alt="Verbindungsstück" src="https://user-images.githubusercontent.com/88385654/144748936-545565d5-8019-4317-9ab3-bde5a10a6bd5.jpeg">
 <b>Bild der Winkelverbindung zum Schrittmotor</b> <img alt="Winkelverbindung" src="https://user-images.githubusercontent.com/88385654/144749209-f82a8302-f0d7-4fcc-bb83-b723baece09f.jpg">
 <b>Blechplattform auf dem Ventil der Gasflasche</b> <img alt="Plattform" src="https://user-images.githubusercontent.com/88385654/144749222-d67bf05a-0ed0-4973-9913-175274c65055.jpg">
+</details>
+
+<ul>
+	<li>Als Gefäß entschied sich die Gruppe für einen alten Kochtopf. Dieser war bereits im Besitz einer befreundeten Familie und war daher leicht zu beschaffen. Da in mehreren Versuchsreihen auffiel, dass selbst bei sehr niedriger Flamme, sich der Inhalt des Topfes weiter erhitzte, stellte die Gruppe fest, dass der Topf so gut isoliert war, dass nicht genug Wärme an die Umwelt abgegeben wird. Da die Flamme nicht weiter reduziert werden konnte, musste die Abgabe an die Umwelt erhöht werden. Es stellte sich als sinnvoll heraus den Deckel nur halb auf den Topf zu setzen, sobald die Temperatur erreicht wurde. Außerdem wurden durch Bohrungen in den Deckel Löcher geschaffen, durch die der heiße Wasserdampf entweichen konnte. </li>
+</ul>
+
+<details>
+	<summary>Bilder vom Topf</summary>
+<b>Bild des Topfes</b> <img alt="Bild vom Topf" src="https://user-images.githubusercontent.com/88385654/144749679-4335eee3-a7ed-42f8-adac-58cc2f3cddf0.jpg">
+<b>Bild des durchlöcherten Deckels von unten</b> <img alt="Bild von unten" src="https://user-images.githubusercontent.com/88385654/144749768-e2e6f891-f862-420d-8950-a2ec922d81a8.jpg">
 </details>
 
 
