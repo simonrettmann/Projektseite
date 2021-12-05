@@ -172,13 +172,15 @@ void isr ()  {
   lastInterruptTime = interruptTime;                          //der Zeitpunkt des aktuellen Interrupts wird als Zeitpunkt des vergangenen Interruptes deffiniert
 } 
 ```
+	
 </details>
 </li>
 
-	<li>Der Schrittwert „rotarySchrittwert“ kann zwei Zuständen annehmen. Wenn der encoder gedrückt wird, also „HIGH“ am „PinSW“ anliegt, dann ist der Schrittwert als 1 °C pro Schritt definiert, anderenfalls beträgt der Schrittwert 5 °C pro Schritt. So kann der Benutzer zwischen einer schnelleren oder präziseren Eingabe der Zieltemperatur wechseln und dies flexible an seine Bedürfnisse anpassen, je nachdem ob der rotary encoder eingedrückt oder lediglich gedreht wird. 
+	<li>Der Schrittwert „rotarySchrittwert“ kann zwei Zuständen annehmen. Wenn der encoder gedrückt wird, also „HIGH“ am „PinSW“ anliegt, dann ist der Schrittwert als 1 °C pro Schritt definiert, anderenfalls beträgt der Schrittwert 5 °C pro Schritt. So kann der Benutzer zwischen einer schnelleren oder präziseren Eingabe der Zieltemperatur wechseln und dies flexible an seine Bedürfnisse anpassen, je nachdem ob der rotary encoder eingedrückt oder lediglich gedreht wird. </li>
 
 <details>
 	<summary>Auschnitt des Codes</summary>
+	
 ```c
 int rotarySchrittwert = 5; 
 
@@ -191,6 +193,7 @@ void loop() {
   }
 }
 ```
+	
 </details>
 </li>
 	<li>Die gemessene Temperatur des Thermoelements wird „tatTemp“ genannt. Es handelt sich um eine „Float“-Variable, welche die Temperatur auf zwei Nachkommastellen genau speichert.  Es wird etwa zwei- bis dreimal pro Sekunde, zu Beginn jeder Loop, gemessen, wie die aktuelle Temperatur in °C innerhalb des Topfes ist. Die Programmierung funktioniert über eine library, welche speziell für das Driverboard des Elements programmiert wurde.</li>
