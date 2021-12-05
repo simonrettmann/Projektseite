@@ -141,8 +141,56 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 <h4> <a id="Software"> &#10123; &nbsp softwaretechnische Umsetzung </a> </h4>
 Die Aufgabe der Software ist es, unter Berücksichtigung der eingestellten Zieltemperatur, die gemessene Temperatur in ein Öffnungsgrad des Ventils zu übertragen. Dazu werden verschiedene Werte erhoben, welche tatsächlich durch die physische Umwelt oder den Benutzer des Produktes verändert werden:
 <ul>
-	<li>Die Zieltemperatur wird durch den rotary encoder definiert. Dabei handelt es sich um eine Integer-Variable (int) mit dem Namen „eingestellteTemp“. Gespeichert werden die ganzzahligen Werte vom encoder als Temperatur in °C. Zur Programmierung des rotary encoders ist eine spezielle Art der Programmierung nötig, welche eine Besonderheit des Programms darstellt. Die Problematik ist, dass der rotary encoder selber nicht speichert, in welcher Position er sich befindet oder welcher Wert äquivalent zu der momentanen Stellung ist. Es werden lediglich Stromimpulse bei jedem Schritt abgegeben. Doch können die Signale im Loop-Abschnitt des Programms nur dann ausgelesen werden, wenn ein entsprechender Abschnitt zur Zeit der Signalübertragung durchgeführt wird. Wird gerade ein anderer Befehl, wie z.B. ein „delay“, ausgeführt, kann der Stromimpuls nicht verarbeitet werden. Um einen präzise funktionierenden encoder zu programmieren, ist es nötig, dass alle gesendeten Daten vom Programm bearbeitet werden. Gelöst wurde diese Herausforderung mit einer Interrupt-Routine. Es handelt es sich um einen gesonderten Programmteil, welcher durch einen festgelegten Auslöser jederzeit gestartet und durchgeführt werden kann. Nach der Unterbrechung wird die Hauptschleife an der Stelle der Unterbrechungen fortgesetzt. Bei der Programmierung konnte sich die Bauweise des rotary encoders zu Nutze gemacht werden. Bei jedem Schritt liegt für einen kurzen Abschnitt keine Spannung am Clock-Pin des Encoders an. Sobald also der Zustand „LOW” am PinA anliegt, wird um einen Schritt gedreht. Dies wird als Auslöser der ISR (= Interrupt-Service-Routine) festgelegt. Je nach der Drehrichtung folgt nun entweder ein „LOW” Signal des Datenpins (PinB) oder es wird kein weiterer Impuls übermittelt. Das Programm überprüft diese Bedingungen. Somit kann ermittelt werden, ob die „eingestellteTemp“ um den Schrittwert „rotarySchrittwert“ erhöht oder verringert werden soll. Die größte Herausforderung war es „bouncing“ in den Griff zu bekommen. Fehlerhafte Signale, die durch unsaubere Kontaktschließung bei der Hardware entstehen, sorgen beim rotary encoder für den Anschein, dass der Encoder um bis zu mehrere hundert Schritte gedreht wurde. Die Lösung dieses Problems hat der Gruppe einige kurze Nächte beschert. Verhindern ließ sich dieses Phänomen schlussendlich, indem der Zeitabstand zwischen den Signalen überprüft wird. Sind seit dem vorherigen Signal weniger als 5ms vergangen, handelt es sich um einen „Bounce“. Das Signal wird folglich ignoriert. </li>
-	<li>Der Schrittwert „rotarySchrittwert“ kann zwei Zuständen annehmen. Wenn der encoder gedrückt wird, also „HIGH“ am „PinSW“ anliegt, dann ist der Schrittwert als 1 °C pro Schritt definiert, anderenfalls beträgt der Schrittwert 5 °C pro Schritt. So kann der Benutzer zwischen einer schnelleren oder präziseren Eingabe der Zieltemperatur wechseln und dies flexible an seine Bedürfnisse anpassen, je nachdem ob der rotary encoder eingedrückt oder lediglich gedreht wird. </li>
+	<li>Die Zieltemperatur wird durch den rotary encoder definiert. Dabei handelt es sich um eine Integer-Variable (int) mit dem Namen „eingestellteTemp“. Gespeichert werden die ganzzahligen Werte vom encoder als Temperatur in °C. Zur Programmierung des rotary encoders ist eine spezielle Art der Programmierung nötig, welche eine Besonderheit des Programms darstellt. Die Problematik ist, dass der rotary encoder selber nicht speichert, in welcher Position er sich befindet oder welcher Wert äquivalent zu der momentanen Stellung ist. Es werden lediglich Stromimpulse bei jedem Schritt abgegeben. Doch können die Signale im Loop-Abschnitt des Programms nur dann ausgelesen werden, wenn ein entsprechender Abschnitt zur Zeit der Signalübertragung durchgeführt wird. Wird gerade ein anderer Befehl, wie z.B. ein „delay“, ausgeführt, kann der Stromimpuls nicht verarbeitet werden. Um einen präzise funktionierenden encoder zu programmieren, ist es nötig, dass alle gesendeten Daten vom Programm bearbeitet werden. Gelöst wurde diese Herausforderung mit einer Interrupt-Routine. Es handelt es sich um einen gesonderten Programmteil, welcher durch einen festgelegten Auslöser jederzeit gestartet und durchgeführt werden kann. Nach der Unterbrechung wird die Hauptschleife an der Stelle der Unterbrechungen fortgesetzt. Bei der Programmierung konnte sich die Bauweise des rotary encoders zu Nutze gemacht werden. Bei jedem Schritt liegt für einen kurzen Abschnitt keine Spannung am Clock-Pin des Encoders an. Sobald also der Zustand „LOW” am PinA anliegt, wird um einen Schritt gedreht. Dies wird als Auslöser der ISR (= Interrupt-Service-Routine) festgelegt. Je nach der Drehrichtung folgt nun entweder ein „LOW” Signal des Datenpins (PinB) oder es wird kein weiterer Impuls übermittelt. Das Programm überprüft diese Bedingungen. Somit kann ermittelt werden, ob die „eingestellteTemp“ um den Schrittwert „rotarySchrittwert“ erhöht oder verringert werden soll. Die größte Herausforderung war es „bouncing“ in den Griff zu bekommen. Fehlerhafte Signale, die durch unsaubere Kontaktschließung bei der Hardware entstehen, sorgen beim rotary encoder für den Anschein, dass der Encoder um bis zu mehrere hundert Schritte gedreht wurde. Die Lösung dieses Problems hat der Gruppe einige kurze Nächte beschert. Verhindern ließ sich dieses Phänomen schlussendlich, indem der Zeitabstand zwischen den Signalen überprüft wird. Sind seit dem vorherigen Signal weniger als 5ms vergangen, handelt es sich um einen „Bounce“. Das Signal wird folglich ignoriert. 
+<details>
+	<summary>Auschschnitt des Codes</summary>
+```c
+//erster wichtiger Codeausschnitt
+void setup() {
+  attachInterrupt(digitalPinToInterrupt(PinA), isr, LOW);  //die Interupt-Routine "ISR" wird dann ausgelöst, wenn der PinA = LOW ist
+}
+
+void isr ()  {
+  static unsigned long lastInterruptTime = 0;
+  unsigned long interruptTime = millis();          //es wird gespeichert, zu welchem Zeitpunkt der Interrupt kommt
+
+  
+  if (interruptTime - lastInterruptTime > 5) {     //wenn der Interupt schneller als 5 ms nach dem vorherigen Interrupt kommt, wird dieser ignoriert. Dadurch wird "Bouncing" verhindert.
+    if (digitalRead(PinB) == LOW)
+    {
+      eingestellteTemp-= rotarySchrittwert ;       //wenn nach PinA= LOW PinB=Low folgt, soll die eingestellte Temperatur um den Schrittwert vergrößert werden 
+    }
+    else {
+      eingestellteTemp+= rotarySchrittwert ;       //anderenfalls soll die eingestellte Temperatur um den Schrittwert zunehmen
+
+    eingestellteTemp = min(300, max(0, eingestellteTemp));    //die Temperatur, welche eingestellt werden kann, ist zwischen 0° und 300° begrenzt 
+
+
+  }
+  lastInterruptTime = interruptTime;                          //der Zeitpunkt des aktuellen Interrupts wird als Zeitpunkt des vergangenen Interruptes deffiniert
+} 
+```
+</details>
+</li>
+
+	<li>Der Schrittwert „rotarySchrittwert“ kann zwei Zuständen annehmen. Wenn der encoder gedrückt wird, also „HIGH“ am „PinSW“ anliegt, dann ist der Schrittwert als 1 °C pro Schritt definiert, anderenfalls beträgt der Schrittwert 5 °C pro Schritt. So kann der Benutzer zwischen einer schnelleren oder präziseren Eingabe der Zieltemperatur wechseln und dies flexible an seine Bedürfnisse anpassen, je nachdem ob der rotary encoder eingedrückt oder lediglich gedreht wird. 
+
+<details>
+	<summary>Auschnitt des Codes</summary>
+```c
+int rotarySchrittwert = 5; 
+
+void loop() {
+  if ((!digitalRead(PinSW))) {        //wenn der Knopf des Encoders gedrückt wird (Strom am PinSW anliegt), ist der Schrittwert = 1
+    rotarySchrittwert = 1;
+  }
+  else{                               //andernfalls beträgt der Schrittwert = 5
+    rotarySchrittwert = 5;
+  }
+}
+```
+</details>
+</li>
 	<li>Die gemessene Temperatur des Thermoelements wird „tatTemp“ genannt. Es handelt sich um eine „Float“-Variable, welche die Temperatur auf zwei Nachkommastellen genau speichert.  Es wird etwa zwei- bis dreimal pro Sekunde, zu Beginn jeder Loop, gemessen, wie die aktuelle Temperatur in °C innerhalb des Topfes ist. Die Programmierung funktioniert über eine library, welche speziell für das Driverboard des Elements programmiert wurde.</li>
 </ul>
 
@@ -153,18 +201,86 @@ Diese Parameter alleine reichen aber nicht aus, um den Kocher zu betreiben. Es m
 </ul>
 Grundsätzlich werden Variablen und Konstanten vor dem Setup-Teil des Programms definiert. So werden als erstes die benötigten Bibliotheken eingebunden und dann die Pins für den Schrittmotor, den rotary encoder, das I2C-LCD und das Thermoelement festgelegt. Die Zuweisung der Pins erleichtert später den Überblick. Auch die vorher erwähnten Konstanten und Variablen werden definiert. Anschließend müssen sowohl der Schrittmotor und das LCD, als auch das Thermomodul als Objekte initialisiert werden. Folglich kann nun mit den jeweiligen Bibliotheken gearbeitet werden, in welchen die Parameter der spezifischen Objekte eingespeist wurden. <br>
 Der Setup-Teil des Programms wird nur einmal ausgeführt. In diesem Teil wird als erstes die serielle Kommunikation gestartet. Der Arduino kann mit dem Computer seriell kommunizieren, um Daten auszutauschen. In unserem Fall dient der serielle Monitor des Computers später als Kontrollbildschirm. Außerdem wird das LC-Display gestartet und die Arbeitseinstellung des Schrittmotors definiert. Die ISR wird im Setup dem oben beschriebenen Auslöser zugeordnet. Sobald das Setup erfolgreich ausgeführt wurde, übermittelt der Arduino das Signal „Start“, welches nun im seriellen Monitor erscheint. <br>
+Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.
+<details>
+	<summary>Auschnitt des Codes</summary>
+```c
+void loop() {
+    float tatTemp = thermo.readCelsius();               //das Thermomenter wird ausgelesen und der Wert als Variable überführt
+         delay(300);
+  
+ Serial.print("Eingestellte Temperatur: ");          
+  Serial.println(eingestellteTemp);
+         Serial.println(" ");
+         
+  Serial.print("Gemessene Temperatur in C: ");
+  Serial.println(tatTemp);
+         Serial.println(" ");
+         
+  Serial.print("Temperaturdifferenz:");
+  Serial.println(tempDifferenz);
+         Serial.println(" ");
+         
+  Serial.print("Ventilöffnung in Prozent: ");
+  Serial.println(pVentil);
+         Serial.println(" ");
+
+  Serial.println("------------------------------------");  //dient der Übersicht im seriellen Monitor
+
+  lcd.clear();                         //leert das LCD, damit neue und alte Werte sich nicht überlagern
+  lcd.setCursor(0, 0);                 //das LCD soll die gemessene Temperatur und die eingstellte Temperatur darstellen: 
+  lcd.print("ein.Temp: ");
+    lcd.print(eingestellteTemp);
+    lcd.setCursor(15, 0);
+    lcd.print("C");
+  lcd.setCursor(0, 1);
+  lcd.print("akt.Temp: ");
+    lcd.print(tatTemp);
+    lcd.setCursor(15, 1);
+    lcd.print("C");
+
+}
+```
+</details> 
+</li>
+</ul>
+
+Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.<b
 Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.<br>
 Nach der Aktualisierung der verschiedenen Anzeigen wird mit dem Herzstück des Codes fortgefahren. In dem Abschnitt findet die Verrechnung der eingestellten Parameter statt. Dazu wird die Temperaturdifferenz „tempDifferenz“ gebildet. Die nötige Position des Steppers setzt sich aus der nötigen Öffnung des Ventils in Prozent, multipliziert mit der Schrittanzahl, welche für 1% Öffnung nötig ist, zusammen. Daraus folgt eine Position in Schritten, welche später von dem Schrittmotor angefahren wird. 
 Nach der Aktualisierung der verschiedenen Anzeigen wird mit dem Herzstück des Codes fortgefahren. In dem Abschnitt findet die Verrechnung der eingestellten Parameter statt. Dazu wird die Temperaturdifferenz „tempDifferenz“ gebildet. Die nötige Position des Steppers setzt sich aus der nötigen Öffnung des Ventils in Prozent, multipliziert mit der Schrittanzahl, welche für 1% Öffnung nötig ist, zusammen. Daraus folgt eine Position in Schritten, welche später von dem Schrittmotor angefahren wird. 
-Nun wird mit einer mathematischen Funktion ermittelt, wie groß die Öffnung des Ventils in % entsprechend der Temperaturdifferenz sein muss. Der f(x)-Wert der Funktion steht für die Ventilöffnung in Prozent und ist eine „Float“-Variable mit dem Namen „pVentil“. Der x-Wert der Funktion ist die Temperaturdifferenz „tempDifferenz“. Jeder Temperaturdifferenz soll eine Ventilöffnung in Prozent zugeordnet werden. Grundsätzlich muss folgender Zusammenhang gelten: Je größer die Temperaturdifferenz, desto großer die prozentuale Ventilöffnung. Ein einfacher linearer Zusammenhang eignet sich aber nicht, da so lange wie möglich viel Hitze erzeugt werden soll, damit sich der Topf schnell aufheizen kann. Das Projekt soll den Kochprozess vereinfachen und nicht unnötig in die Länge ziehen. Jedoch ist es ebenso wichtig, dass bei geringer Temperaturdifferenz die Flamme zunehmend kleiner wird, um das exakte Erreichen der Zieltemperatur zu gewährleisten. Folglich scheint es sinnvoll eine Funktion zu nehmen, welche eine logistische Kurve aufweist. Die Entscheidung fiel nach vielen Versuchen mit unterschiedlichen Funktionen auf folgende Funktion: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+Nun wird mit einer mathematischen Funktion ermittelt, wie groß die Öffnung des Ventils in % entsprechend der Temperaturdifferenz sein muss. Der f(x)-Wert der Funktion steht für die Ventilöffnung in Prozent und ist eine „Float“-Variable mit dem Namen „pVentil“. Der x-Wert der Funktion ist die Temperaturdifferenz „tempDifferenz“. Jeder Temperaturdifferenz soll eine Ventilöffnung in Prozent zugeordnet werden. Grundsätzlich muss folgender Zusammenhang gelten: Je größer die Temperaturdifferenz, desto großer die prozentuale Ventilöffnung. Ein einfacher linearer Zusammenhang eignet sich aber nicht, da so lange wie möglich viel Hitze erzeugt werden soll, damit sich der Topf schnell aufheizen kann. Das Projekt soll den Kochprozess vereinfachen und nicht unnötig in die Länge ziehen. Jedoch ist es ebenso wichtig, dass bei geringer Temperaturdifferenz die Flamme zunehmend kleiner wird, um das exakte Erreichen der Zieltemperatur zu gewährleisten. Folglich scheint es sinnvoll eine Funktion zu nehmen, welche eine logistische Kurve aufweist. Die Entscheidung fiel nach vielen Versuchen mit unterschiedlichen Funktionen auf folgende Funktion: f(x)= 80/(1+1,15^(-x+35))+0,3
 
 <details>
 	<summary>Graph der Funktion</summary>
+<img alt="Bild der Funktion" src="https://user-images.githubusercontent.com/88385654/144602584-05349368-ac9f-4e00-b8c8-3e7bb629fdbc.jpg">
 </details> 
 		
 <br>
 Im Bereich geringer Temperaturdifferenzen nährt sich die Flamme der geringsten Intensität an. Bei steigender Differenz steigt die Funktion jedoch stark, sodass viel Hitze erzeugt wird und die Zieltemperatur schnell erreicht werden kann. Bei besonders hohen Differenzen wiederum nährt sich die Funktion einem Grenzwert von etwa 80% Ventilöffnung an. Beim Testen ist klar geworden, dass eine Ventilöffnung von 100% unbrauchbar ist, da bei dieser großen Gasmenge viele, hohe Flammen am Topf vorbeischlagen. Die Funktion verfügt somit über einen Wertebereich für die Ventilöffnung von 0,3% bis 80% Öffnung. Deshalb geht die Flamme nie gänzlich aus, sie wird aber auch nie so groß, dass die Benutzerfreundlichkeit oder Sicherheit gefährdet wird. <br>
 Zuletzt wird die errechnete Schrittstellung des Schrittmotors angefahren. Die Programmierung des Motors gestaltet sich dank der verwendeten Bibliothek simpel. Als erstes wird ein Ziel in Schritten festgelegt, welches angefahren werden soll. Anschließend wird der Befehl erteilt, dass der Motor dieses Ziel anfahren soll. Während der Bewegung des Schrittmotors wird der Code angehalten. Unter anderem aus diesem Grund ist die Verwendung der „ISR“ unumgänglich. Nach dem Erreichen des festgelegten Ziels, werden alle für den Motor relevanten Pins deaktiviert. Der Vorteil davon ist eine Energieersparnis, da kein Strom fließen kann. Folglich erhitzt der Schrittmotor nicht so stark, sodass ein Dauerbetrieb ohne Sorge möglich ist.
+<details>
+	<summary>Ausschnitt des Codes</summary>
+```c
+void loop() {
+  tempDifferenz = eingestellteTemp - tatTemp;               //Differenz aus eingestellter Temperatur und gemessener Temperatur wird gebildet und als int Variable gespeichert
+
+  stepperPosition = pVentil * schritteproprozent;           //die Position des Steppers ist das Produkt der gewünschten Ventilstellung und der Anzahl der Schritte, welche für 1% benötigt werden
+
+                                                             
+  pVentil= 80/(1+ pow(1.15, -tempDifferenz + 35)) +0.3;     //mathematische Funktion, welche die Temperaturdifferenz in eine Ventilstellung umsetzt
+  pVentil = min(100, max(0, pVentil));                      //der Wertebereich der Ventilöffnung wir zwischen 0% und 100% begrenzt
+
+  stepperPosition = min(7168, max(0, stepperPosition));     //um sicherzugehen, dass der Motor nicht zu weit dreht und die Hardware beschädigt, wird auch die maximale Drehung begrenzt
+  
+//dieser Programmabschnitt aktuallisert die Position des Schrittmotors:
+stepper1.moveTo(stepperPosition);                     
+stepper1.runToPosition();          //leider wird der Code an diese Stelle pausiert; der Schrittmotor sollte also möglichst schnell drehen
+stepper1.disableOutputs();         //die Pins für den Schrittmotor werden deaktiviert. Somit wird Strom gespart und eine Überhitzung des Motors verhindert
+
+}
+```
+</details>
 
 <h4> <a id="Hardware"> &#10123; &nbsp hardwaretechnische Umsetzung </a> </h4>
 
