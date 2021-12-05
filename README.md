@@ -190,6 +190,19 @@ Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realit
 <b>in den Deckel integriertes Thermometer</b> <img alt="intergriertes Thermometer" src="https://user-images.githubusercontent.com/88385654/144747404-27191672-7abd-4362-8e79-351dfe617311.jpg">
 </details>
 
+<ul>
+	<li>Die Steuerung der Gasmenge, die verbrannt wird, wurde durch einen Schrittmotor übernommen. Der Motor sollte über eine Verbindung den Gasregler des Kochers greifen und diesen drehen kann, damit mehr oder weniger Gas fließen kann. Die Wahl fiel auf den 
+"STEPPER MOTOR PM GEARED UNI 12" <a href="https://www.digikey.de/de/products/detail/adafruit-industries-llc/918/5629415?utm_adgroup=Stepper%20Motors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Motors%2C%20Solenoids%2C%20Driver%20Boards%2FModules_Returning&utm_term=&productid=5629415&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rCAzhqzbNzZGrUsjejqYNCxjTkvTUfVFHDXiyRKR401iU-asx9D3XMaAojuEALw_wcB"> Link zum Motor</a> Durch ein 3D gedrucktes Verbindungsstück wurde eine Verbindung von Schrittmotor zu Gasregler hergestellt. Das Verbindungsstück wurde mit TinkerCAD erstellt, nachdem mit einer Schieblehre alle wichtigen Maße erhoben worden und dann mit einem 3D Drucker gedruckt. Nach mehreren Fehlversuchen ist ein Teil entstanden, dass sowohl auf den Schrittmotor als auch auf den Gasregler gesteckt werden konnte und auch bei Belastung nicht durchdrehte. Damit der Schrittmotor Kraft gegen das Ventil aufbringen kann, musste sichergestellt werden, dass der Motor sich nicht mitdreht, sondern mit statischen Teilen verbunden ist. Zu diesem Zweck wurde eine Plattform aus dünnen Blech auf das Ventil gebaut und mit einer Steckverbindung sicher verankert. Anschließend wurde eine Verlängerung aus Winkeln gebaut und sowohl an dem Schrittmotor als auch an dem Blech befestigt. Der Schrittmotor war nun fest verankert, sodass er Kraft auf das Ventil aufbrinken kann, um es zu öffnen oder zu schließen. Durch die Winkellängerung wurde auch eine Flexibilität der Halterung erreicht. Diese Beweglichkeit führte zu zwei wichtigen Vorteilen: Erstens wurde die Ausrichtung erleichtert und zweitens kann somit auch die Vor- und Zurückbewegung des Gasgewindes ausgelgichen werden. </li>
+		
+</ul>		
+<details>
+	<summary>Bilder des Schrittmotors
+<b>Produktbild von digikey</b><img alt="Produktbild" src="https://user-images.githubusercontent.com/88385654/144747822-e6f11729-bca4-4690-b1ac-8fdc9646971a.jpg">
+<b>Bild des 3D-Verbindungsstückes</b> <img alt="Verbindungsstück" src="https://user-images.githubusercontent.com/88385654/144748936-545565d5-8019-4317-9ab3-bde5a10a6bd5.jpeg">
+<b>Bild der Winkelverbindung zum Schrittmotor</b> <img alt="Winkelverbindung" src="https://user-images.githubusercontent.com/88385654/144749209-f82a8302-f0d7-4fcc-bb83-b723baece09f.jpg">
+<b>Blechplattform auf dem Ventil der Gasflasche</b> <img alt="Plattform" src="https://user-images.githubusercontent.com/88385654/144749222-d67bf05a-0ed0-4973-9913-175274c65055.jpg">
+</details>
+
 
 
 
