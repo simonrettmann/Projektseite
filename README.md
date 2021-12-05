@@ -170,21 +170,22 @@ Zuletzt wird die errechnete Schrittstellung des Schrittmotors angefahren. Die Pr
 
 Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realität getestet werden kann und der "physical" Teil des physical computing Projekts umgesetzt werden kann. 
 <ul>
-	<li> Das Herzstück der Software ist natürlich der Gaskocher, der bei Amazon bestellt wurde. a href="https://www.amazon.de/gp/product/B085ZJJ2Q5/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1"> Kauflink von Amazon</a> Über eine passende Gasflasche wird der Kocher mit Gas versorgt. Der Gasfluss kann manuell mit einem Drehregler eingestellt werden. 
+	<li> Das Herzstück der Software ist natürlich der Gaskocher, der bei Amazon bestellt wurde. <a href="https://www.amazon.de/gp/product/B085ZJJ2Q5/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1"> Kauflink von Amazon</a> Über eine passende Gasflasche wird der Kocher mit Gas versorgt. Der Gasfluss kann manuell mit einem Drehregler eingestellt werden. 
 	
-	<details>
+<details>
 	<summary>Bild des Gaskochers</summary>
 <b>Bild des Gaskochers</b> <img alt="Bild des Gaskochers" src="https://user-images.githubusercontent.com/88385654/144746538-a3a069a7-3398-41c4-8aec-4cbb6bee9ebf.jpg">
-	</details>
+</details>
 	
 	<li> Ebenfalls essenziell für das Projekt ist ein arduinofähiges Thermometer. Die Wahl fiel auf das MAX6675. <a href="https://www.amazon.de/ANGEEK-MAX6675-thermocouple-Temperature-arduino/dp/B07X41RG6K/ref=sr_1_2_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=max6675&qid=1630502970&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE3WkxHNEVaR0RIODUmZW5jcnlwdGVkSWQ9QTAzODIyOTMxVUI3TVFJTVk4VzNZJmVuY3J5cHRlZEFkSWQ9QTA2ODY3NDQxUTUxRVNaSlU2QTdSJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="> Kauflink von Amazon</a> Dieses Thermometer zeichnet sich durch einen hohen Toleranzbereich aus, was für die Arbeit mit Feuer sehr wichtig ist. Zunächst stand der genaue Einsatzbereich des Thermometers noch nicht fest und über eine Anwendung im Flammenbereich wurde gesprochen. Letztendlich entschied sich die Gruppe dafür das Thermometer in den Deckel zu integrieren und so die Temperatur des Topfinhaltes zu ermitteln. Bei dieser Idee, die für den Nutzer die transparenteste Darstellung bietet, ergaben sich allerdings zwei Probleme. Erstens ist der gemessen Wert etwas verzögert, da das Wasser sich nur träge erwärmt und die Restwärme des Topfbodens und der Gasflamme nicht berücksichtigt wird. Zweitens ist das Thermometer selbst nicht wasserdicht, sodass es abgedichtet werden musste. Dafür wurde das Thermometer in eine Kupferröhre gelegt und mit Gummidichtungen abgedichtet. Außerdem wurde das Thermometer in den Topfdeckel integriert, damit der Topf frei beweglich bleibt und nur der Deckel fest mit dem Versuchsaufbau verbunden ist. Durch diese Befestigung, die ebenfalls mit einer Gummidichtung verschlossen wurde, konnte ein Messfehler durch vorbeischlagende Flammen und die Erhitzung des Topfmaterials verhindert werden. 
-	<details>
+		
+<details>
 	<summary>Bilder des Thermometers</summary>
 	<b>Produktfoto von Amazon</b> <img alt="Foto von Amazon" src="https://user-images.githubusercontent.com/88385654/144747225-fcb04dbb-05b6-4ce7-90b7-404dee4d755c.jpg">
 	<b>abgedichtetes Thermometer von der Seite</b> <img alt="Thermometer von der Seite" src="https://user-images.githubusercontent.com/88385654/144747285-2ef88078-3c94-4cbe-ad3c-f3cbb8325a52.jpg">
 	<b>abgedichtetes Thermometer von oben</b> <img alt="Thermometer von oben" src="https://user-images.githubusercontent.com/88385654/144747339-24c4b179-e3e3-4dc5-b00e-c582d85e4a4a.jpg">
 	<b>in den Deckel integriertes Thermometer</b> <img alt="intergriertes Thermometer" src="https://user-images.githubusercontent.com/88385654/144747404-27191672-7abd-4362-8e79-351dfe617311.jpg">
-	</details>
+</details>
 
 
 
