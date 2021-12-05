@@ -215,9 +215,15 @@ Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realit
 <b>Bild des durchlöcherten Deckels von unten</b> <img alt="Bild von unten" src="https://user-images.githubusercontent.com/88385654/144749768-e2e6f891-f862-420d-8950-a2ec922d81a8.jpg">
 </details>
 
+<ul>
+	<li>Zur besseren Bedienbarkeit entschied sich die Gruppe für die Verwendung eines rotary encoders. Über diesen wird die Temperatur eingestellt. Konkret wurde der rotary encoder KY-040 verwendet. <a href="https://www.az-delivery.de/products/drehimpulsgeber-modul"> Kauflink zum Produkt</a> Für diesen Prototyp wurde noch kein Handknauf verwendet. Ziel ist es aber für die nächste Abgabe den encoder in eine Box einzuarbeiten und die Bedienung über einen Handknauf zu erleichtern. Ähnlich verhält es sich mit dem verwendeten LC-Display. Es wurde das HD44780 1602 LCD verwendet. <a href="https://www.az-delivery.de/products/lcd-display-16x2-mit-blauem-hintergrund-und-i2c-converter-bundle?variant=8192126353504&utm_source=google&utm_medium=cpc&utm_campaign=SSC&utm_term=&gclid=Cj0KCQiA47GNBhDrARIsAKfZ2rAnj0JM_XPeS0Z1rtCZJ93HEfahyNPcxbsyNrfys7dtyzNWtuK33gMaAhgnEALw_wcB"> Kauflink zum Produkt </a> Das Display sorgt für eine angehmen Benutzung, da sowohl die gemessene Temperatur als auch die eingestellte Temperatur angezeigt werden. So ist ein Computer mit einem seriellen Monitor nicht mehr erforderlich. Auch das Display wurde für den Prototyp nicht verändert, soll aber beim fertigen Produkt in die Box mit eingearbeitet werden. </li>
+</ul>
 
-
-
+<details>
+	<summary>Bilder der Produkte</summary>
+<b> Produktbild von az-delivery</b> <img src="https://user-images.githubusercontent.com/88385654/144749970-04ccdbf6-e61b-4ebb-9592-f7efa3977fc0.jpg">
+<b> Bild des LC-Displaysy</b> <img src="https://user-images.githubusercontent.com/88385654/144750406-56c0f437-670e-401b-9569-75e6f7e67144.jpg">
+	</details>
 
 
 <h4> <a id="Produkt"> &#10123; &nbsp Das Endprodukt </a> </h4>
