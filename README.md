@@ -199,7 +199,7 @@ void loop() {
 Diese Parameter alleine reichen aber nicht aus, um den Kocher zu betreiben. Es müssen Konstanten sowie Rechenvariablen bekannt sein:
 <ul>
 	<li> Die „tempDifferenz“ stellt als "Float"-Varibale die Differenz zwischen der gemessenen Temperatur und der eingestellten Temperatur dar.</li>
-	<li>Die spezifischen Parameter des Schrittmotors und die Eigenschaft des Ventils sind nötig, um zu errechnen, wie viele Schritte der Motor machen muss, um das Ventil um 1% zu öffnen.
+	<li>Die spezifischen Parameter des Schrittmotors und die Eigenschaft des Ventils sind nötig, um zu errechnen, wie viele Schritte der Motor machen muss, um das Ventil um 1% zu öffnen.</li>
 </ul>
 Grundsätzlich werden Variablen und Konstanten vor dem Setup-Teil des Programms definiert. So werden als erstes die benötigten Bibliotheken eingebunden und dann die Pins für den Schrittmotor, den rotary encoder, das I2C-LCD und das Thermoelement festgelegt. Die Zuweisung der Pins erleichtert später den Überblick. Auch die vorher erwähnten Konstanten und Variablen werden definiert. Anschließend müssen sowohl der Schrittmotor und das LCD, als auch das Thermomodul als Objekte initialisiert werden. Folglich kann nun mit den jeweiligen Bibliotheken gearbeitet werden, in welchen die Parameter der spezifischen Objekte eingespeist wurden. <br>
 Der Setup-Teil des Programms wird nur einmal ausgeführt. In diesem Teil wird als erstes die serielle Kommunikation gestartet. Der Arduino kann mit dem Computer seriell kommunizieren, um Daten auszutauschen. In unserem Fall dient der serielle Monitor des Computers später als Kontrollbildschirm. Außerdem wird das LC-Display gestartet und die Arbeitseinstellung des Schrittmotors definiert. Die ISR wird im Setup dem oben beschriebenen Auslöser zugeordnet. Sobald das Setup erfolgreich ausgeführt wurde, übermittelt der Arduino das Signal „Start“, welches nun im seriellen Monitor erscheint. <br>
@@ -247,6 +247,7 @@ void loop() {
 }
 	
 ```
+	
 </details> 
 </li>
 </ul>
