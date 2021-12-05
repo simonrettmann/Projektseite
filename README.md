@@ -404,7 +404,7 @@ Der viermonatige Entwicklungsprozess mit vielen Testungen und Lösungen von Prob
 	
 <details>
 	<summary>Steckverbindungen</summary>
-<b>digitalisierter Schaltplan von fritzing</b> <img alt="digitaler Schaltplan" src="">
+<b>digitalisierter Schaltplan von fritzing</b> <img alt="digitaler Schaltplan" src="https://user-images.githubusercontent.com/88385654/144753487-58118cd6-2b24-4fef-bd60-57f71f325147.jpg">
 <b>Steckverbindung des Schrittmotors</b> <img alt="Steckverbindung des Schrittmotors" src="https://user-images.githubusercontent.com/88385654/144713178-4dc65553-10ac-4708-bc5a-465017ca3dc8.jpg">
 <b>Steckverbindung des rotary encoders</b> <img alt="Steckverbindung rotary encoder" src="https://user-images.githubusercontent.com/88385654/144713214-fa8f43f1-de85-4387-8a83-e92b9f6d5d65.jpg">
 <b>Steckverbindung des Thermometers</b> <img alt="Steckverbindung Thermometer" src="https://user-images.githubusercontent.com/88385654/144713242-cf867406-5674-4c8a-95bd-096a48159876.jpg">
