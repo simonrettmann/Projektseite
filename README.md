@@ -4,7 +4,8 @@
 </head>
 <h3 align="center"> Ein Projekt von David Borgmann und Simon Rettmann</h3>
 <h3 align="left">Stormarnschule Ahrensburg <br/> Informatik, Bl <br/> Schuljahr 2021/22, 1. Halbjahr </br> </h3> </div>
-<h3 align="left"> &#10132; <a href="https://github.com/simonrettmann/Stundenprotokolle"> Stundenprotokolle</a> </h3>
+<h3 align="left"> &#10132; <a href="https://github.com/simonrettmann/Stundenprotokolle"> Stundenprotokolle</a> </h3> <br>
+<h3 align="left"> &#10132; <a href="https://www.youtube.com/channel/UCEljeGxqUxyXQlMq9Q-U8_w"> YouTube Kanal - Novum hotplate</a> </h3>
 <br>
 
 <img align="center" alt="Animation" width="700" height="400" src="https://user-images.githubusercontent.com/88385654/144711039-e3602339-827f-42a6-b684-b21d3ee8bcf1.gif">
