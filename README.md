@@ -197,7 +197,7 @@ Die Hardware ist erfolderlich, damit die entwickelte Software auch in der Realit
 
 <details>
 	<summary>Bilder des Schrittmotors</summary>
-<b>Produktbild von digikey</b><img alt="Produktbild" src="https://user-images.githubusercontent.com/88385654/144747822-e6f11729-bca4-4690-b1ac-8fdc9646971a.jpg">
+<b>Produktbild von digikey</b> <img alt="Produktbild" src="https://user-images.githubusercontent.com/88385654/144747822-e6f11729-bca4-4690-b1ac-8fdc9646971a.jpg">
 <b>Bild des 3D-Verbindungsstückes</b> <img alt="Verbindungsstück" src="https://user-images.githubusercontent.com/88385654/144748936-545565d5-8019-4317-9ab3-bde5a10a6bd5.jpeg">
 <b>Bild der Winkelverbindung zum Schrittmotor</b> <img alt="Winkelverbindung" src="https://user-images.githubusercontent.com/88385654/144749209-f82a8302-f0d7-4fcc-bb83-b723baece09f.jpg">
 <b>Blechplattform auf dem Ventil der Gasflasche</b> <img alt="Plattform" src="https://user-images.githubusercontent.com/88385654/144749222-d67bf05a-0ed0-4973-9913-175274c65055.jpg">
