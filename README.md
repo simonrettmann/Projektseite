@@ -202,9 +202,12 @@ Diese Parameter alleine reichen aber nicht aus, um den Kocher zu betreiben. Es m
 Grundsätzlich werden Variablen und Konstanten vor dem Setup-Teil des Programms definiert. So werden als erstes die benötigten Bibliotheken eingebunden und dann die Pins für den Schrittmotor, den rotary encoder, das I2C-LCD und das Thermoelement festgelegt. Die Zuweisung der Pins erleichtert später den Überblick. Auch die vorher erwähnten Konstanten und Variablen werden definiert. Anschließend müssen sowohl der Schrittmotor und das LCD, als auch das Thermomodul als Objekte initialisiert werden. Folglich kann nun mit den jeweiligen Bibliotheken gearbeitet werden, in welchen die Parameter der spezifischen Objekte eingespeist wurden. <br>
 Der Setup-Teil des Programms wird nur einmal ausgeführt. In diesem Teil wird als erstes die serielle Kommunikation gestartet. Der Arduino kann mit dem Computer seriell kommunizieren, um Daten auszutauschen. In unserem Fall dient der serielle Monitor des Computers später als Kontrollbildschirm. Außerdem wird das LC-Display gestartet und die Arbeitseinstellung des Schrittmotors definiert. Die ISR wird im Setup dem oben beschriebenen Auslöser zugeordnet. Sobald das Setup erfolgreich ausgeführt wurde, übermittelt der Arduino das Signal „Start“, welches nun im seriellen Monitor erscheint. <br>
 Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.
+
 <details>
-	<summary>Auschnitt des Codes</summary>
+	<summary>Ausschnitt des Codes</summary>
+	
 ```c
+	
 void loop() {
     float tatTemp = thermo.readCelsius();               //das Thermomenter wird ausgelesen und der Wert als Variable überführt
          delay(300);
@@ -240,6 +243,7 @@ void loop() {
     lcd.print("C");
 
 }
+	
 ```
 </details> 
 </li>
@@ -259,9 +263,12 @@ Nun wird mit einer mathematischen Funktion ermittelt, wie groß die Öffnung des
 <br>
 Im Bereich geringer Temperaturdifferenzen nährt sich die Flamme der geringsten Intensität an. Bei steigender Differenz steigt die Funktion jedoch stark, sodass viel Hitze erzeugt wird und die Zieltemperatur schnell erreicht werden kann. Bei besonders hohen Differenzen wiederum nährt sich die Funktion einem Grenzwert von etwa 80% Ventilöffnung an. Beim Testen ist klar geworden, dass eine Ventilöffnung von 100% unbrauchbar ist, da bei dieser großen Gasmenge viele, hohe Flammen am Topf vorbeischlagen. Die Funktion verfügt somit über einen Wertebereich für die Ventilöffnung von 0,3% bis 80% Öffnung. Deshalb geht die Flamme nie gänzlich aus, sie wird aber auch nie so groß, dass die Benutzerfreundlichkeit oder Sicherheit gefährdet wird. <br>
 Zuletzt wird die errechnete Schrittstellung des Schrittmotors angefahren. Die Programmierung des Motors gestaltet sich dank der verwendeten Bibliothek simpel. Als erstes wird ein Ziel in Schritten festgelegt, welches angefahren werden soll. Anschließend wird der Befehl erteilt, dass der Motor dieses Ziel anfahren soll. Während der Bewegung des Schrittmotors wird der Code angehalten. Unter anderem aus diesem Grund ist die Verwendung der „ISR“ unumgänglich. Nach dem Erreichen des festgelegten Ziels, werden alle für den Motor relevanten Pins deaktiviert. Der Vorteil davon ist eine Energieersparnis, da kein Strom fließen kann. Folglich erhitzt der Schrittmotor nicht so stark, sodass ein Dauerbetrieb ohne Sorge möglich ist.
+
 <details>
 	<summary>Ausschnitt des Codes</summary>
+	
 ```c
+	
 void loop() {
   tempDifferenz = eingestellteTemp - tatTemp;               //Differenz aus eingestellter Temperatur und gemessener Temperatur wird gebildet und als int Variable gespeichert
 
@@ -279,6 +286,7 @@ stepper1.runToPosition();          //leider wird der Code an diese Stelle pausie
 stepper1.disableOutputs();         //die Pins für den Schrittmotor werden deaktiviert. Somit wird Strom gespart und eine Überhitzung des Motors verhindert
 
 }
+	
 ```
 </details>
 
