@@ -234,8 +234,16 @@ Die zurückliegende Gruppenarbeit wurde anhand von verschieden Kriterien beurtei
 </ul>
 Nach der Reflexion des Projektes war für die Gruppe schnell klar, dass die Zusammenarbeit auch für das kommende Halbjahr weitergeführt werden soll. Es ist wichtig, dass ein gutes Klima in der Gruppe herrscht und dass sich die Mitglieder aufeinander verlassen können. Während der finalen Phase des Projektes hat sich ebenfalls abgezeichnet, dass die Gruppe das Projekt des arduinogesteuerten Gaskochers weiterführen möchte. Im Hinterkopf stehen dort auch Ideen wie die Teilnahme am Wettbewerb Jugend forscht. Der entstandene Prototyp hat gezeigt wie viel innerhalb von vier Monaten möglich ist und dass dieses physical computing Projekt die Gruppe begeistert. Damit aus dem Protoyp ein fertiges Produkt wird, sollen in der nächsten Arbeitsphase einige Änderungen vorgenommen werden. Die Brainstormingpahse dieses neuen Abschnittes startete bereits. Abschließend lässt sich dieser Unterichtsabschnitt als erfolgreich bewerten, weil viel dazu gelernt wurde, es viel Spaß bereitet hat und ein funktionaler Protoyp entstanden ist, der die Grundlage für die weitere Entwicklung darstellt. 
 
-
-
 <h4> <a id="Ausblick"> &#10124; &nbsp Ausblick auf kommende Veränderungen </a> </h4>
+
+Beim Brainstormingprozess kamen folgende Ideen auf:
+<ul>
+	<li>Handysteuerung der Temperatur</li>
+	<li>Programmierbarkeit eines Kochprogramms mit zeitlicher Komponente</li>
+	<li>ordentliches Kabelmanagement mit Verlötung und Aufbewahrung</li>
+	<li>akkustiches oder optisches Signal bei Erreichen der Zieltemperatur</li>
+	<li>weitere Optimierung der Funktion zur Ermittlung des Öffnungsgrads</li>
+	<li>eigenständige Entzündung des Gaskochers</li>
+</ul>
 
 
