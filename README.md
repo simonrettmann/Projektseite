@@ -141,8 +141,9 @@ Der Entwicklungsprozess startete am 3.8.2021, der ersten Informatikstunde mit ei
 <h4> <a id="Software"> &#10123; &nbsp softwaretechnische Umsetzung </a> </h4>
 Die Aufgabe der Software ist es, unter Berücksichtigung der eingestellten Zieltemperatur, die gemessene Temperatur in ein Öffnungsgrad des Ventils zu übertragen. Dazu werden verschiedene Werte erhoben, welche tatsächlich durch die physische Umwelt oder den Benutzer des Produktes verändert werden:
 <ul>
-	<li>Die Zieltemperatur wird durch den rotary encoder definiert. Dabei handelt es sich um eine Integer-Variable (int) mit dem Namen „eingestellteTemp“. Gespeichert werden die ganzzahligen Werte vom encoder als Temperatur in °C. Zur Programmierung des rotary encoders ist eine spezielle Art der Programmierung nötig, welche eine Besonderheit des Programms darstellt. Die Problematik ist, dass der rotary encoder selber nicht speichert, in welcher Position er sich befindet oder welcher Wert äquivalent zu der momentanen Stellung ist. Es werden lediglich Stromimpulse bei jedem Schritt abgegeben. Doch können die Signale im Loop-Abschnitt des Programms nur dann ausgelesen werden, wenn ein entsprechender Abschnitt zur Zeit der Signalübertragung durchgeführt wird. Wird gerade ein anderer Befehl, wie z.B. ein „delay“, ausgeführt, kann der Stromimpuls nicht verarbeitet werden. Um einen präzise funktionierenden encoder zu programmieren, ist es nötig, dass alle gesendeten Daten vom Programm bearbeitet werden. Gelöst wurde diese Herausforderung mit einer Interrupt-Routine. Es handelt es sich um einen gesonderten Programmteil, welcher durch einen festgelegten Auslöser jederzeit gestartet und durchgeführt werden kann. Nach der Unterbrechung wird die Hauptschleife an der Stelle der Unterbrechungen fortgesetzt. Bei der Programmierung konnte sich die Bauweise des rotary encoders zu Nutze gemacht werden. Bei jedem Schritt liegt für einen kurzen Abschnitt keine Spannung am Clock-Pin des Encoders an. Sobald also der Zustand „LOW” am PinA anliegt, wird um einen Schritt gedreht. Dies wird als Auslöser der ISR (= Interrupt-Service-Routine) festgelegt. Je nach der Drehrichtung folgt nun entweder ein „LOW” Signal des Datenpins (PinB) oder es wird kein weiterer Impuls übermittelt. Das Programm überprüft diese Bedingungen. Somit kann ermittelt werden, ob die „eingestellteTemp“ um den Schrittwert „rotarySchrittwert“ erhöht oder verringert werden soll. Die größte Herausforderung war es „bouncing“ in den Griff zu bekommen. Fehlerhafte Signale, die durch unsaubere Kontaktschließung bei der Hardware entstehen, sorgen beim rotary encoder für den Anschein, dass der Encoder um bis zu mehrere hundert Schritte gedreht wurde. Die Lösung dieses Problems hat der Gruppe einige kurze Nächte beschert. Verhindern ließ sich dieses Phänomen schlussendlich, indem der Zeitabstand zwischen den Signalen überprüft wird. Sind seit dem vorherigen Signal weniger als 5ms vergangen, handelt es sich um einen „Bounce“. Das Signal wird folglich ignoriert. 
-		
+	<li>Die Zieltemperatur wird durch den rotary encoder definiert. Dabei handelt es sich um eine Integer-Variable (int) mit dem Namen „eingestellteTemp“. Gespeichert werden die ganzzahligen Werte vom encoder als Temperatur in °C. Zur Programmierung des rotary encoders ist eine spezielle Art der Programmierung nötig, welche eine Besonderheit des Programms darstellt. Die Problematik ist, dass der rotary encoder selber nicht speichert, in welcher Position er sich befindet oder welcher Wert äquivalent zu der momentanen Stellung ist. Es werden lediglich Stromimpulse bei jedem Schritt abgegeben. Doch können die Signale im Loop-Abschnitt des Programms nur dann ausgelesen werden, wenn ein entsprechender Abschnitt zur Zeit der Signalübertragung durchgeführt wird. Wird gerade ein anderer Befehl, wie z.B. ein „delay“, ausgeführt, kann der Stromimpuls nicht verarbeitet werden. Um einen präzise funktionierenden encoder zu programmieren, ist es nötig, dass alle gesendeten Daten vom Programm bearbeitet werden. Gelöst wurde diese Herausforderung mit einer Interrupt-Routine. Es handelt es sich um einen gesonderten Programmteil, welcher durch einen festgelegten Auslöser jederzeit gestartet und durchgeführt werden kann. Nach der Unterbrechung wird die Hauptschleife an der Stelle der Unterbrechungen fortgesetzt. Bei der Programmierung konnte sich die Bauweise des rotary encoders zu Nutze gemacht werden. Bei jedem Schritt liegt für einen kurzen Abschnitt keine Spannung am Clock-Pin des Encoders an. Sobald also der Zustand „LOW” am PinA anliegt, wird um einen Schritt gedreht. Dies wird als Auslöser der ISR (= Interrupt-Service-Routine) festgelegt. Je nach der Drehrichtung folgt nun entweder ein „LOW” Signal des Datenpins (PinB) oder es wird kein weiterer Impuls übermittelt. Das Programm überprüft diese Bedingungen. Somit kann ermittelt werden, ob die „eingestellteTemp“ um den Schrittwert „rotarySchrittwert“ erhöht oder verringert werden soll. Die größte Herausforderung war es „bouncing“ in den Griff zu bekommen. Fehlerhafte Signale, die durch unsaubere Kontaktschließung bei der Hardware entstehen, sorgen beim rotary encoder für den Anschein, dass der Encoder um bis zu mehrere hundert Schritte gedreht wurde. Die Lösung dieses Problems hat der Gruppe einige kurze Nächte beschert. Verhindern ließ sich dieses Phänomen schlussendlich, indem der Zeitabstand zwischen den Signalen überprüft wird. Sind seit dem vorherigen Signal weniger als 5ms vergangen, handelt es sich um einen „Bounce“. Das Signal wird folglich ignoriert. </li>
+</ul>
+
 <details>
 	<summary>Ausschnitt des Codes</summary>
 	
@@ -174,9 +175,10 @@ void isr ()  {
 ```
 	
 </details>
-</li>
 
+<ul>
 	<li>Der Schrittwert „rotarySchrittwert“ kann zwei Zuständen annehmen. Wenn der encoder gedrückt wird, also „HIGH“ am „PinSW“ anliegt, dann ist der Schrittwert als 1 °C pro Schritt definiert, anderenfalls beträgt der Schrittwert 5 °C pro Schritt. So kann der Benutzer zwischen einer schnelleren oder präziseren Eingabe der Zieltemperatur wechseln und dies flexible an seine Bedürfnisse anpassen, je nachdem ob der rotary encoder eingedrückt oder lediglich gedreht wird. </li>
+</ul>
 
 <details>
 	<summary>Auschnitt des Codes</summary>
@@ -195,7 +197,8 @@ void loop() {
 ```
 	
 </details>
-</li>
+
+<ul>
 	<li>Die gemessene Temperatur des Thermoelements wird „tatTemp“ genannt. Es handelt sich um eine „Float“-Variable, welche die Temperatur auf zwei Nachkommastellen genau speichert.  Es wird etwa zwei- bis dreimal pro Sekunde, zu Beginn jeder Loop, gemessen, wie die aktuelle Temperatur in °C innerhalb des Topfes ist. Die Programmierung funktioniert über eine library, welche speziell für das Driverboard des Elements programmiert wurde.</li>
 </ul>
 
@@ -252,8 +255,6 @@ void loop() {
 ```
 	
 </details> 
-</li>
-</ul>
 
 Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.<b
 Der sich endlos wiederholende Loop des Programms beginnt mit der Auslesung des Thermoelements. Der gemessene Wert wir in die Variable „tatTemp“ überführt. Es folgt eine serielle Übermittlung aller interessanten Variablen an den seriellen Monitor. Nun erfüllt der Kontrollmonitor seine Funktion. Damit auch bei dem Endprodukt überprüft werden kann, wie die gemessene oder eingestellte Temperatur des Kochers ist, werden diese beiden Werte im nächsten Teil über das LC-Display ausgegeben. Eine Schwierigkeit war zunächst, dass die mit jedem Loop neu hinzugefügten Schriftzeichen alten Zeichen überschrieben haben, ohne diese gänzlich zu entfernen. Deshalb müssen vor jeder Änderung der Anzeige zunächst alle Zeichen für ein Frame entfernt werden, bevor die neuen Zeichen auf dem LCD erscheinen. Der Nebeneffekt dieser Darstellung ist jedoch ein für den Benutzer wahrnehmbares flackern des Displays.<br>
@@ -294,6 +295,7 @@ stepper1.disableOutputs();         //die Pins für den Schrittmotor werden deakt
 }
 	
 ```
+	
 </details>
 
 <h4> <a id="Hardware"> &#10123; &nbsp hardwaretechnische Umsetzung </a> </h4>
