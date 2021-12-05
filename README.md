@@ -299,9 +299,10 @@ Beim Brainstormingprozess kamen folgende Ideen auf:
 	<li>Handysteuerung der Temperatur</li>
 	<li>Programmierbarkeit eines Kochprogramms mit zeitlicher Komponente</li>
 	<li>ordentliches Kabelmanagement mit Verlötung und Aufbewahrung</li>
-	<li>akkustiches oder optisches Signal bei Erreichen der Zieltemperatur</li>
+	<li>akkustiches oder optisches Signal beim Erreichen der Zieltemperatur</li>
 	<li>weitere Optimierung der Funktion zur Ermittlung des Öffnungsgrads</li>
 	<li>eigenständige Entzündung des Gaskochers</li>
+	<li>Menu für das LC-Display</li>
 </ul>
 
 
